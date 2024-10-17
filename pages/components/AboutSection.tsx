@@ -6,8 +6,8 @@ export default function AboutSection() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const section = document.getElementById('about');
-      
+      const section = document.getElementById('about') as HTMLElement | null; // Type assertion
+
       // Check if section is not null
       if (section) {
         const { top, bottom } = section.getBoundingClientRect();
