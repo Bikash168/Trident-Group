@@ -1,5 +1,4 @@
-// components/AboutSection.js
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function AboutSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -7,6 +6,8 @@ export default function AboutSection() {
   useEffect(() => {
     const handleScroll = () => {
       const section = document.getElementById('about');
+
+      // Only access getBoundingClientRect if section is not null
       if (section) {
         const { top, bottom } = section.getBoundingClientRect();
 
@@ -14,7 +15,7 @@ export default function AboutSection() {
         if (top < window.innerHeight && bottom > 0) {
           setIsVisible(true);
         } else {
-          setIsVisible(false);
+          setIsVisible(false); // Set to false if out of view
         }
       }
     };
@@ -28,7 +29,10 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <section className="py-16 bg-orange-50" id="about">
+    <section
+      className={`py-16 bg-orange-50 transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`} 
+      id="about"
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl text-[#316b9e] font-bold text-center mb-4">About Us</h2>
         <p className="text-lg text-center mb-8">
