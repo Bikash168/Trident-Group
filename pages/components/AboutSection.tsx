@@ -7,13 +7,15 @@ export default function AboutSection() {
   useEffect(() => {
     const handleScroll = () => {
       const section = document.getElementById('about');
-      const { top, bottom } = section.getBoundingClientRect();
+      if (section) {
+        const { top, bottom } = section.getBoundingClientRect();
 
-      // Check if the section is in view
-      if (top < window.innerHeight && bottom > 0) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
+        // Check if the section is in view
+        if (top < window.innerHeight && bottom > 0) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
       }
     };
 

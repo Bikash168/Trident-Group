@@ -11,11 +11,11 @@ export default function ContactSection() {
   
   const [isVisible, setIsVisible] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission logic here (e.g., API call)
     alert("Thank you for your message!");
@@ -30,9 +30,11 @@ export default function ContactSection() {
   useEffect(() => {
     const handleScroll = () => {
       const section = document.getElementById('contact');
-      const { top } = section.getBoundingClientRect();
-      if (top < window.innerHeight * 0.8) {
-        setIsVisible(true);
+      if (section) {
+        const { top } = section.getBoundingClientRect();
+        if (top < window.innerHeight * 0.8) {
+          setIsVisible(true);
+        }
       }
     };
 
