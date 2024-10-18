@@ -45,9 +45,9 @@ export default function Layout({ children }: LayoutProps) {
       {/* Header */}
       <header className="bg-white shadow-md sticky top-0 z-50">
         {/* Top Bar Section */}
-        <div className="bg-orange-50 text-black text-sm py-2">
-          <div className="container mx-auto flex justify-between items-center px-4 md:px-8">
-            <div className="flex items-center space-x-4">
+        <div className="bg-orange-50 text-black text-xs md:text-sm py-2">
+          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-8 space-y-2 md:space-y-0">
+            <div className="flex flex-col md:flex-row items-center space-x-4">
               <span className="flex items-center">
                 <FaMapMarkerAlt className="mr-1" /> Bhubaneswar, India
               </span>
@@ -58,7 +58,7 @@ export default function Layout({ children }: LayoutProps) {
                 <FaEnvelope className="mr-1" /> info@trident.ac.in
               </span>
             </div>
-            <div className="flex items-center space-x-4">
+            <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="text-blue-600" />
               </a>
@@ -85,7 +85,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="container mx-auto p-4 flex justify-between items-center">
           <Link href="/" className="flex items-center w-full md:w-auto">
             <div className="space-x-3">
-              <img src="/tgi_logo.png" alt="TGI Logo" className="h-12 w-auto" />
+              <img src="/tgi_logo.png" alt="TGI Logo" className="h-10 md:h-12 w-auto" />
             </div>
           </Link>
           {/* Hamburger Menu Icon */}
@@ -97,7 +97,7 @@ export default function Layout({ children }: LayoutProps) {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-6">
-            <ul className="flex space-x-6">
+            <ul className="flex space-x-4 md:space-x-6">
               <li>
                 <Link href="/about-us" className="hover:text-blue-600">
                   About Us
@@ -155,21 +155,21 @@ export default function Layout({ children }: LayoutProps) {
       <main>{children}</main>
 
      {/* Footer */}
-     <footer className="bg-orange-50 text-black p-8">
+     <footer className="bg-orange-50 text-black p-6 md:p-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">About Us</h3>
-            <p className='text-sm'>
+            <p className="text-sm">
               Established in 1998, Trident Group of Institutions is a leader in education and research in Odisha.
               With over two decades of operation, it has transformed the lives of more than 20,000 students.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div className='padleft'>
+          <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Quick Links</h3>
-            <ul>
+            <ul className="space-y-2">
               <li><Link href="/index" className="text-black block hover:text-blue-400">Home</Link></li>
               <li><Link href="/about-us" className="text-black block hover:text-blue-400">About Us</Link></li>
               <li><Link href="/programs" className="text-black block hover:text-blue-400">Programs</Link></li>
@@ -178,10 +178,10 @@ export default function Layout({ children }: LayoutProps) {
             </ul>
           </div>
 
-          {/* Quick Links for Trident Group Websites */}
+          {/* Trident Group Websites */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Trident Group Websites</h3>
-            <ul>
+            <ul className="space-y-2">
               <li><Link href="https://tat.ac.in/" className="text-black block hover:text-blue-400">Trident Academy of Technology</Link></li>
               <li><Link href="https://tact.ac.in/" className="text-black block hover:text-blue-400">Trident Academy of Creative Technology</Link></li>
               <li><a href="https://taps.ac.in/" className="text-black block hover:text-blue-400">Trident Academy of Professional Studies</a></li>
@@ -193,17 +193,18 @@ export default function Layout({ children }: LayoutProps) {
           {/* Address */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
-            <p className='text-sm'>
-              Trident Group of Institutions,<br />
-              F2, Chandaka Industrial Estate,<br />
-              Technology Corridor, Infocity Area,<br />
-              Chandrasekharpur, Bhubaneswar, Odisha 751024
-            </p>
-            <p className="mt-2">Email: info@trident.ac.in</p>
-            <p className="mt-1">Phone: +91 98611 91195</p>
+            <address>
+              Trident Group of Institutions, <br />
+              Bhubaneswar, Odisha, India. <br />
+              <FaPhoneAlt className="inline-block mr-2" /> +91 98611 91195 <br />
+              <FaEnvelope className="inline-block mr-2" /> info@trident.ac.in
+            </address>
           </div>
         </div>
-        <p className="text-center text-xs mt-8">© 2024 Trident Group of Institutions, Bhubaneswar. All Rights Reserved.</p>
+
+        <div className="text-center mt-8">
+          <p>&copy; 2024 Trident Group of Institutions. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   );
