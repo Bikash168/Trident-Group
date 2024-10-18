@@ -15,7 +15,7 @@ export default function NewsAndEvents() {
         <title>News and Events - Trident Group of Institutions</title>
         <meta name="description" content="Stay updated with the latest news and events at Trident Group of Institutions." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" /> {/* Change here */}
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
       </Head>
 
@@ -114,60 +114,30 @@ export default function NewsAndEvents() {
             <div className="bg-white rounded-lg shadow-lg p-4 transition-all duration-300 hover:shadow-xl transform hover:scale-105">
               <h3 className="text-xl text-[#316b9e] font-semibold mb-2">Orientation Program 2024</h3>
               <p className="text-sm text-gray-700 mb-2">
-                Our Orientation Program for new students will take place on August 1, 2024. Get ready for an exciting start to your academic journey!
+                New students are invited to attend the Orientation Program on August 1, 2024, to learn about the campus and academic resources.
               </p>
               <p className="text-gray-600 mb-1">Date: August 1, 2024</p>
-              <a href="#" className="text-blue-600 hover:underline transition-all duration-300 hover:text-[#316b9e]">Learn More</a>
+              <a href="#" className="text-blue-600 hover:underline transition-all duration-300 hover:text-[#316b9e]">Read More</a>
             </div>
 
             {/* Event 2 */}
             <div className="bg-white rounded-lg shadow-lg p-4 transition-all duration-300 hover:shadow-xl transform hover:scale-105">
-              <h3 className="text-xl text-[#316b9e] font-semibold mb-2">Annual Cultural Fest</h3>
+              <h3 className="text-xl text-[#316b9e] font-semibold mb-2">Career Fair 2024</h3>
               <p className="text-sm text-gray-700 mb-2">
-                Join us for our Annual Cultural Fest on February 20, where students showcase their talents in music, dance, and drama.
+                Join us for the Career Fair on September 15, where students can meet potential employers and explore job opportunities.
               </p>
-              <p className="text-gray-600 mb-1">Date: February 20, 2025</p>
-              <a href="#" className="text-blue-600 hover:underline transition-all duration-300 hover:text-[#316b9e]">Learn More</a>
+              <p className="text-gray-600 mb-1">Date: September 15, 2024</p>
+              <a href="#" className="text-blue-600 hover:underline transition-all duration-300 hover:text-[#316b9e]">Read More</a>
             </div>
 
             {/* Event 3 */}
             <div className="bg-white rounded-lg shadow-lg p-4 transition-all duration-300 hover:shadow-xl transform hover:scale-105">
-              <h3 className="text-xl text-[#316b9e] font-semibold mb-2">Alumni Meet 2025</h3>
+              <h3 className="text-xl text-[#316b9e] font-semibold mb-2">Alumni Meet 2024</h3>
               <p className="text-sm text-gray-700 mb-2">
-                We invite all alumni to join us for our Alumni Meet on March 15, 2025, to reconnect and share experiences.
+                Alumni are invited to the annual meet on October 10, where they can reconnect and network with fellow graduates.
               </p>
-              <p className="text-gray-600 mb-1">Date: March 15, 2025</p>
-              <a href="#" className="text-blue-600 hover:underline transition-all duration-300 hover:text-[#316b9e]">Learn More</a>
-            </div>
-
-            {/* Event 4 */}
-            <div className="bg-white rounded-lg shadow-lg p-4 transition-all duration-300 hover:shadow-xl transform hover:scale-105">
-              <h3 className="text-xl text-[#316b9e] font-semibold mb-2">Spring Fest 2025</h3>
-              <p className="text-sm text-gray-700 mb-2">
-                Spring Fest 2025 will be held on April 5, featuring fun activities, food stalls, and cultural performances.
-              </p>
-              <p className="text-gray-600 mb-1">Date: April 5, 2025</p>
-              <a href="#" className="text-blue-600 hover:underline transition-all duration-300 hover:text-[#316b9e]">Learn More</a>
-            </div>
-
-            {/* Event 5 */}
-            <div className="bg-white rounded-lg shadow-lg p-4 transition-all duration-300 hover:shadow-xl transform hover:scale-105">
-              <h3 className="text-xl text-[#316b9e] font-semibold mb-2">Tech Workshop on IoT</h3>
-              <p className="text-sm text-gray-700 mb-2">
-                Join us for a hands-on workshop on the Internet of Things (IoT) on May 10, 2025. Open to all tech enthusiasts!
-              </p>
-              <p className="text-gray-600 mb-1">Date: May 10, 2025</p>
-              <a href="#" className="text-blue-600 hover:underline transition-all duration-300 hover:text-[#316b9e]">Learn More</a>
-            </div>
-
-            {/* Event 6 */}
-            <div className="bg-white rounded-lg shadow-lg p-4 transition-all duration-300 hover:shadow-xl transform hover:scale-105">
-              <h3 className="text-xl text-[#316b9e] font-semibold mb-2">Career Fair 2025</h3>
-              <p className="text-sm text-gray-700 mb-2">
-                Don’t miss our Career Fair on June 15, where students can connect with potential employers and explore job opportunities.
-              </p>
-              <p className="text-gray-600 mb-1">Date: June 15, 2025</p>
-              <a href="#" className="text-blue-600 hover:underline transition-all duration-300 hover:text-[#316b9e]">Learn More</a>
+              <p className="text-gray-600 mb-1">Date: October 10, 2024</p>
+              <a href="#" className="text-blue-600 hover:underline transition-all duration-300 hover:text-[#316b9e]">Read More</a>
             </div>
           </div>
         </div>
