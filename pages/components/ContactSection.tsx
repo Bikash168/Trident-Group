@@ -104,7 +104,7 @@ export default function ContactSection() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows="4"
+                  rows=""
                   className="w-full p-3 border border-gray-300 rounded"
                 />
               </div>
