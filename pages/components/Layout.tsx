@@ -194,10 +194,14 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
             <address>
-              Trident Group of Institutions, <br />
-              Bhubaneswar, Odisha, India. <br />
-              <FaPhoneAlt className="inline-block mr-2" /> +91 98611 91195 <br />
-              <FaEnvelope className="inline-block mr-2" /> info@trident.ac.in
+            Trident Group of Institutions,
+              <br />F2, Chandaka Industrial Estate,
+              <br />Technology Corridor, Infocity Area,
+              <br />Chandrasekharpur, Bhubaneswar,
+              <br />Odisha. 751024<br />
+
+              <br /><FaPhoneAlt className="inline-block mr-2" /> +91 98611 91195 <br />
+              <br /><FaEnvelope className="inline-block mr-2" /> info@trident.ac.in
             </address>
           </div>
         </div>
