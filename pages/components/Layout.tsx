@@ -46,7 +46,7 @@ export default function Layout({ children }: LayoutProps) {
       <header className="bg-white shadow-md sticky top-0 z-50">
         {/* Top Bar Section */}
         <div className="bg-orange-50 text-black text-sm py-2">
-          <div className="container mx-auto flex justify-between items-center px-4">
+          <div className="container mx-auto flex justify-between items-center px-4 md:px-8">
             <div className="flex items-center space-x-4">
               <span className="flex items-center">
                 <FaMapMarkerAlt className="mr-1" /> Bhubaneswar, India
@@ -74,7 +74,7 @@ export default function Layout({ children }: LayoutProps) {
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
                 <FaYoutube className="text-red-600" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="text-green-600" />
               </a>
             </div>
@@ -85,7 +85,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="container mx-auto p-4 flex justify-between items-center">
           <Link href="/" className="flex items-center w-full md:w-auto">
             <div className="space-x-3">
-              <img src="/tgi_logo.png" alt="TGI Logo" className="h-12 logosi" />
+              <img src="/tgi_logo.png" alt="TGI Logo" className="h-12 w-auto" />
             </div>
           </Link>
           {/* Hamburger Menu Icon */}
@@ -160,7 +160,10 @@ export default function Layout({ children }: LayoutProps) {
           {/* About Section */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">About Us</h3>
-            <p className='textalin'>Established in 1998, Trident Group of Insitutions is a leader in education and research in the state of Odisha. In a span of over 2 decades of its operation, it has trasnformed lives of 20000+ students.</p>
+            <p className='text-sm'>
+              Established in 1998, Trident Group of Institutions is a leader in education and research in Odisha.
+              With over two decades of operation, it has transformed the lives of more than 20,000 students.
+            </p>
           </div>
 
           {/* Quick Links */}
@@ -190,46 +193,17 @@ export default function Layout({ children }: LayoutProps) {
           {/* Address */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
-            <p className='textalin'> Trident Group of Institutions,<br />
-              F2, Chandaka Industrial Estate,
-              Technology Corridor, Infocity Area,
-              Chandrasekharpur, Bhubaneswar,
-              Odisha. 751024</p>
-            <br />
-            <p>Email: info@trident.ac.in</p>
-            <p>Phone: +91 98611 91195</p>
-          </div>
-
-          {/* Social Media Links */}
-          <div className='flex items-center justify-between'>
-            <h3 className="text-lg text-[#316b9e] font-bold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a href="https://www.facebook.com/people/Sacred-Foundation/61565399609076/" className="hover:text-blue-400">
-                <FaFacebook size={24} />
-              </a>
-              <a href="https://x.com/sacred71444" className="hover:text-blue-400">
-                <FaXTwitter size={24} />
-              </a>
-              <a href="https://www.instagram.com/sacred.foundation/" className="hover:text-blue-400">
-                <FaInstagram size={24} />
-              </a>
-              <a href="https://www.linkedin.com/company/sacred-foundation/" className="hover:text-blue-400">
-                <FaLinkedin size={24} />
-              </a>
-              <a href="https://www.youtube.com/@sacredfoundation" className="hover:text-blue-400">
-                <FaYoutube size={24} />
-              </a>
-              <a href="https://www.youtube.com/@sacredfoundation" className="hover:text-blue-400">
-                <FaWhatsapp size={24} />
-              </a>
-            </div>
+            <p className='text-sm'>
+              Trident Group of Institutions,<br />
+              F2, Chandaka Industrial Estate,<br />
+              Technology Corridor, Infocity Area,<br />
+              Chandrasekharpur, Bhubaneswar, Odisha 751024
+            </p>
+            <p className="mt-2">Email: info@trident.ac.in</p>
+            <p className="mt-1">Phone: +91 98611 91195</p>
           </div>
         </div>
-
-        {/* Copyright Section */}
-        <div className="mt-8 text-[#316b9e] text-center">
-          <p>&copy;  2024 TRIDENT GROUP OF INSTITUTIONS.</p>
-        </div>
+        <p className="text-center text-xs mt-8">© 2024 Trident Group of Institutions, Bhubaneswar. All Rights Reserved.</p>
       </footer>
     </div>
   );
