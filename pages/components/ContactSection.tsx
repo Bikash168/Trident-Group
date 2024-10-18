@@ -140,7 +140,7 @@ export default function ContactSection() {
             width="100%"
             height="300"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen={true}
             loading="lazy"
           ></iframe>
         </div>
