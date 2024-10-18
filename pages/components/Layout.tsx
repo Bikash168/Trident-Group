@@ -37,7 +37,7 @@ export default function Layout({ children }: LayoutProps) {
   };
 
   return (
-    <div>
+    <div className="bg-white text-gray-900">
       <Head>
         <title>Trident Group of Institutions</title>
       </Head>
@@ -45,7 +45,7 @@ export default function Layout({ children }: LayoutProps) {
       {/* Header */}
       <header className="bg-white shadow-md sticky top-0 z-50">
         {/* Top Bar Section */}
-        <div className="bg-orange-50 text-black text-xs md:text-sm py-2">
+        <div className="bg-gray-100 text-gray-700 text-xs md:text-sm py-2">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-8 space-y-2 md:space-y-0">
             <div className="flex flex-col md:flex-row items-center space-x-4">
               <span className="flex items-center">
@@ -66,7 +66,7 @@ export default function Layout({ children }: LayoutProps) {
                 <FaTwitter className="text-blue-400" />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="text-pink-600" />
+                <FaInstagram className="text-blue-500" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-blue-600" />
@@ -124,7 +124,7 @@ export default function Layout({ children }: LayoutProps) {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <nav className="md:hidden bg-white shadow-lg">
+          <nav className="md:hidden bg-gray-100 shadow-lg">
             <ul className="flex flex-col items-center space-y-4 py-4">
               <li>
                 <Link href="/about-us" className="hover:text-blue-600" onClick={toggleMenu}>
@@ -154,8 +154,8 @@ export default function Layout({ children }: LayoutProps) {
       {/* Main Content */}
       <main>{children}</main>
 
-     {/* Footer */}
-     <footer className="bg-orange-50 text-black p-6 md:p-8">
+      {/* Footer */}
+      <footer className="bg-gray-100 text-gray-700 p-6 md:p-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
@@ -170,11 +170,11 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/index" className="text-black block hover:text-blue-400">Home</Link></li>
-              <li><Link href="/about-us" className="text-black block hover:text-blue-400">About Us</Link></li>
-              <li><Link href="/programs" className="text-black block hover:text-blue-400">Programs</Link></li>
-              <li><Link href="/news-and-events" className="text-black block hover:text-blue-400">News & Events</Link></li>
-              <li><Link href="/contact" className="text-black block hover:text-blue-400">Contact</Link></li>
+              <li><Link href="/index" className="text-gray-700 block hover:text-blue-600">Home</Link></li>
+              <li><Link href="/about-us" className="text-gray-700 block hover:text-blue-600">About Us</Link></li>
+              <li><Link href="/programs" className="text-gray-700 block hover:text-blue-600">Programs</Link></li>
+              <li><Link href="/news-and-events" className="text-gray-700 block hover:text-blue-600">News & Events</Link></li>
+              <li><Link href="/contact" className="text-gray-700 block hover:text-blue-600">Contact</Link></li>
             </ul>
           </div>
 
@@ -182,11 +182,11 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Trident Group Websites</h3>
             <ul className="space-y-2">
-              <li><Link href="https://tat.ac.in/" className="text-black block hover:text-blue-400">Trident Academy of Technology</Link></li>
-              <li><Link href="https://tact.ac.in/" className="text-black block hover:text-blue-400">Trident Academy of Creative Technology</Link></li>
-              <li><a href="https://taps.ac.in/" className="text-black block hover:text-blue-400">Trident Academy of Professional Studies</a></li>
-              <li><Link href="https://trident.ac.in/" className="text-black block hover:text-blue-400">Trident Group of Institutions</Link></li>
-              <li><a href="https://dfgroup.in/" className="text-black block hover:text-blue-400">The DF Group</a></li>
+              <li><Link href="https://tat.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Technology</Link></li>
+              <li><Link href="https://tact.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Creative Technology</Link></li>
+              <li><a href="https://taps.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Professional Studies</a></li>
+              <li><Link href="https://trident.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Group of Institutions</Link></li>
+              <li><a href="https://dfgroup.in/" className="text-gray-700 block hover:text-blue-600">The DF Group</a></li>
             </ul>
           </div>
 
