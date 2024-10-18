@@ -98,7 +98,8 @@ export default function ContactSection() {
               </div>
               <div className="mb-4">
                 <label className="block text-white mb-1" htmlFor="message">Message</label>
-                <textarea id="message" name="message" rows="4" required className="w-full border rounded-md p-2"></textarea>
+                <textarea id="message" name="message" rows={`${4}`} required className="w-full border rounded-md p-2"></textarea>
+
 
 
 
