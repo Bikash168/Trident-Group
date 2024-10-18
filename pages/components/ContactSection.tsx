@@ -98,15 +98,10 @@ export default function ContactSection() {
               </div>
               <div className="mb-4">
                 <label className="block text-white mb-1" htmlFor="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows=""
-                  className="w-full p-3 border border-gray-300 rounded"
-                />
+                <textarea id="message" name="message" rows="4" required className="w-full border rounded-md p-2"></textarea>
+
+
+
               </div>
               <button
                 type="submit"
