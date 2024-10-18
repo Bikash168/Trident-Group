@@ -36,7 +36,8 @@ export default function Contact() {
 
                 <div className="mb-4">
                   <label htmlFor="message" className="block text-gray-700 mb-2">Message:</label>
-                  <textarea id="message" name="message" rows="4" required className="w-full border rounded-md p-2"></textarea>
+                  <textarea id="message" name="message" rows={`${4}`} required className="w-full border rounded-md p-2"></textarea>
+
 
                 </div>
 
