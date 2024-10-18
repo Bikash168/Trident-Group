@@ -32,6 +32,8 @@ export default function Programs() {
               <p className="text-sm text-gray-700 mb-2">
                 The B.Tech program offers comprehensive training in various engineering disciplines, preparing students for innovative careers in technology.
               </p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> Engineering fundamentals, problem-solving, software development, and project management.</p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Software Engineer, Systems Analyst, Data Scientist, and Network Architect.</p>
               <p className="text-gray-600">Duration: 4 Years</p>
               <p className="text-gray-600">Eligibility: 10+2 with PCM</p>
               <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
@@ -43,6 +45,8 @@ export default function Programs() {
               <p className="text-sm text-gray-700 mb-2">
                 Our MBA program equips students with leadership skills and business acumen, ideal for those aspiring to excel in management roles.
               </p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> Strategic thinking, financial management, marketing strategies, and leadership.</p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Business Manager, Marketing Director, Financial Analyst, and Operations Manager.</p>
               <p className="text-gray-600">Duration: 2 Years</p>
               <p className="text-gray-600">Eligibility: Graduation</p>
               <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
@@ -54,6 +58,8 @@ export default function Programs() {
               <p className="text-sm text-gray-700 mb-2">
                 The BA program provides a solid foundation in humanities and social sciences, encouraging critical thinking and creativity.
               </p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> Critical analysis, communication, research, and cultural awareness.</p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Educator, Social Worker, Content Writer, and Public Relations Specialist.</p>
               <p className="text-gray-600">Duration: 3 Years</p>
               <p className="text-gray-600">Eligibility: 10+2</p>
               <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
@@ -65,6 +71,8 @@ export default function Programs() {
               <p className="text-sm text-gray-700 mb-2">
                 Our M.Sc program focuses on advanced scientific concepts and research methodologies, preparing students for impactful careers in science.
               </p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> Research techniques, data analysis, and experimental design.</p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Research Scientist, Laboratory Manager, and Data Analyst.</p>
               <p className="text-gray-600">Duration: 2 Years</p>
               <p className="text-gray-600">Eligibility: Graduation in Science</p>
               <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
@@ -76,6 +84,8 @@ export default function Programs() {
               <p className="text-sm text-gray-700 mb-2">
                 This diploma program prepares students for dynamic careers in the hospitality industry, focusing on service excellence and management skills.
               </p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> Customer service, event planning, and hotel management.</p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Hotel Manager, Event Coordinator, and Customer Relations Manager.</p>
               <p className="text-gray-600">Duration: 1 Year</p>
               <p className="text-gray-600">Eligibility: 10+2</p>
               <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
@@ -87,6 +97,8 @@ export default function Programs() {
               <p className="text-sm text-gray-700 mb-2">
                 Our digital marketing certificate program offers insights into current trends and tools, preparing students for careers in the digital space.
               </p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> SEO, content marketing, social media strategy, and analytics.</p>
+              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Digital Marketing Specialist, Social Media Manager, and Content Strategist.</p>
               <p className="text-gray-600">Duration: 6 Months</p>
               <p className="text-gray-600">Eligibility: Graduation</p>
               <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
