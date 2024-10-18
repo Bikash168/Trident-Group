@@ -154,13 +154,13 @@ export default function Layout({ children }: LayoutProps) {
       {/* Main Content */}
       <main>{children}</main>
 
-      {/* Footer */}
-      <footer className="bg-orange-50 text-black p-8">
+     {/* Footer */}
+     <footer className="bg-orange-50 text-black p-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">About Us</h3>
-            <p className='textalin'>Established in 1998, Trident Group of Institutions is a leader in education and research in the state of Odisha. In a span of over 2 decades of its operation, it has transformed lives of 20000+ students.</p>
+            <p className='textalin'>Established in 1998, Trident Group of Insitutions is a leader in education and research in the state of Odisha. In a span of over 2 decades of its operation, it has trasnformed lives of 20000+ students.</p>
           </div>
 
           {/* Quick Links */}
@@ -204,28 +204,32 @@ export default function Layout({ children }: LayoutProps) {
           <div className='flex items-center justify-between'>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <FaFacebook className="text-blue-600" />
+              <a href="https://www.facebook.com/people/Sacred-Foundation/61565399609076/" className="hover:text-blue-400">
+                <FaFacebook size={24} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <FaXTwitter className="text-blue-400" />
+              <a href="https://x.com/sacred71444" className="hover:text-blue-400">
+                <FaXTwitter size={24} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="text-pink-600" />
+              <a href="https://www.instagram.com/sacred.foundation/" className="hover:text-blue-400">
+                <FaInstagram size={24} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-blue-600" />
+              <a href="https://www.linkedin.com/company/sacred-foundation/" className="hover:text-blue-400">
+                <FaLinkedin size={24} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                <FaYoutube className="text-red-600" />
+              <a href="https://www.youtube.com/@sacredfoundation" className="hover:text-blue-400">
+                <FaYoutube size={24} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                <FaWhatsapp className="text-green-600" />
+              <a href="https://www.youtube.com/@sacredfoundation" className="hover:text-blue-400">
+                <FaWhatsapp size={24} />
               </a>
             </div>
           </div>
         </div>
-        <p className="mt-8 text-center text-sm">© 2024 Trident Group of Institutions. All rights reserved.</p>
+
+        {/* Copyright Section */}
+        <div className="mt-8 text-[#316b9e] text-center">
+          <p>&copy;  2024 TRIDENT GROUP OF INSTITUTIONS.</p>
+        </div>
       </footer>
     </div>
   );
