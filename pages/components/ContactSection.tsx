@@ -8,7 +8,7 @@ export default function ContactSection() {
     subject: '',
     message: '',
   });
-  
+
   const [isVisible, setIsVisible] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -48,7 +48,7 @@ export default function ContactSection() {
 
   return (
     <section 
-      className={`py-16 bg-orange-50 transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`} 
+      className={`py-16 bg-white transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`} 
       id="contact"
     >
       <div className="container mx-auto px-4">
@@ -57,7 +57,7 @@ export default function ContactSection() {
           Have any questions? We'd love to hear from you!
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className={`bg-amber-900 p-6 rounded-lg shadow-md transition-transform duration-700 ${isVisible ? 'translate-y-0' : 'translate-y-4 opacity-0'}`}>
+          <div className={`bg-[#316b9e] p-6 rounded-lg shadow-md transition-transform duration-700 ${isVisible ? 'translate-y-0' : 'translate-y-4 opacity-0'}`}>
             <h3 className="text-2xl text-white font-semibold mb-4">Contact Us</h3>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -98,7 +98,13 @@ export default function ContactSection() {
               </div>
               <div className="mb-4">
                 <label className="block text-white mb-1" htmlFor="message">Message</label>
-                <textarea id="message" name="message" rows={4} required className="w-full border rounded-md p-2"></textarea>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows={4} 
+                  required 
+                  className="w-full border border-gray-300 rounded-md p-2"
+                ></textarea>
               </div>
               <button
                 type="submit"
@@ -108,7 +114,7 @@ export default function ContactSection() {
               </button>
             </form>
           </div>
-          <div className={`bg-amber-900 p-6 rounded-lg shadow-md transition-transform duration-700 ${isVisible ? 'translate-y-0' : 'translate-y-4 opacity-0'}`}>
+          <div className={`bg-[#316b9e] p-6 rounded-lg shadow-md transition-transform duration-700 ${isVisible ? 'translate-y-0' : 'translate-y-4 opacity-0'}`}>
             <h3 className="text-2xl text-white font-semibold mb-4">Contact Information</h3>
             <p className="mb-2 text-white">
               <strong>Phone:</strong> +91 98611 91195
@@ -118,17 +124,17 @@ export default function ContactSection() {
             </p>
             <p className="mb-4 text-white">
               <strong>Address:</strong> Trident Group of Institutions
-              F2, Chandaka Industrial Estate,
-              Technology Corridor, Infocity Area,
-              Chandrasekharpur, Bhubaneswar,
-              Odisha. 751024
+              <br />F2, Chandaka Industrial Estate,
+              <br />Technology Corridor, Infocity Area,
+              <br />Chandrasekharpur, Bhubaneswar,
+              <br />Odisha. 751024
             </p>
             <h4 className="text-xl font-semibold text-white mb-2">Follow Us</h4>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" className="text-blue-600 hover:text-blue-700">Facebook</a>
-              <a href="https://twitter.com" className="text-blue-600 hover:text-blue-700">Twitter</a>
-              <a href="https://instagram.com" className="text-blue-600 hover:text-blue-700">Instagram</a>
-              <a href="https://linkedin.com" className="text-blue-600 hover:text-blue-700">LinkedIn</a>
+              <a href="https://facebook.com" className="text-white hover:text-blue-700">Facebook</a>
+              <a href="https://twitter.com" className="text-white hover:text-blue-700">Twitter</a>
+              <a href="https://instagram.com" className="text-white hover:text-blue-700">Instagram</a>
+              <a href="https://linkedin.com" className="text-white hover:text-blue-700">LinkedIn</a>
             </div>
           </div>
         </div>

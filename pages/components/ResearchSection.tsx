@@ -1,4 +1,3 @@
-// components/ResearchSection.js
 import { useEffect, useState } from 'react';
 
 export default function ResearchSection() {
@@ -76,10 +75,10 @@ export default function ResearchSection() {
   }, [researchAreas.length, featuredProjects.length]);
 
   return (
-    <section className="py-16 bg-orange-50" id="research">
+    <section className="py-16 bg-white" id="research">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl text-[#316b9e] font-bold text-center mb-4">Research at Trident</h2>
-        <p className="text-lg text-center mb-8">
+        <p className="text-lg text-center text-gray-700 mb-8">
           Our research initiatives focus on solving real-world challenges through innovation and collaboration.
         </p>
         
@@ -88,12 +87,12 @@ export default function ResearchSection() {
           {researchAreas.map((area, index) => (
             <div
               key={index}
-              className={`research-area bg-amber-900 p-6 rounded-lg shadow-md transition-transform duration-500 transform ${
+              className={`research-area bg-gray-100 p-6 rounded-lg shadow-md transition-transform duration-500 transform ${
                 visibleAreas[index] ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
               }`}
             >
-              <h3 className="text-white text-2xl font-semibold mb-2">{area.title}</h3>
-              <p className="text-white">{area.description}</p>
+              <h3 className="text-[#316b9e] text-2xl font-semibold mb-2">{area.title}</h3>
+              <p className="text-gray-700">{area.description}</p>
             </div>
           ))}
         </div>
@@ -105,16 +104,16 @@ export default function ResearchSection() {
           {featuredProjects.map((project, index) => (
             <div
               key={index}
-              className={`featured-project bg-amber-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform ${
+              className={`featured-project bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform ${
                 visibleProjects[index] ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
               }`}
             >
-              <h4 className="text-xl text-white font-semibold mb-2">{project.title}</h4>
-              <p className="text-white mb-4">{project.description}</p>
-              <p className="text-white mb-4"><strong>Faculty Lead:</strong> {project.facultyLead}</p>
+              <h4 className="text-xl text-[#316b9e] font-semibold mb-2">{project.title}</h4>
+              <p className="text-gray-700 mb-4">{project.description}</p>
+              <p className="text-gray-700 mb-4"><strong>Faculty Lead:</strong> {project.facultyLead}</p>
               <a 
                 href={project.link} 
-                className="bg-blue-400 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-lg font-semibold transition duration-300"
+                className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-lg font-semibold transition duration-300"
               >
                 Learn More
               </a>
@@ -124,12 +123,12 @@ export default function ResearchSection() {
   
         <div className="mt-12 text-center">
           <h4 className="text-2xl text-[#316b9e] font-bold mb-2">Get Involved in Research</h4>
-          <p className="text-lg mb-4">
+          <p className="text-lg text-gray-700 mb-4">
             Explore opportunities for internships and student projects in our research labs.
           </p>
           <a 
             href="/research/internships" 
-            className="bg-blue-400 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition duration-300"
+            className="bg-blue-500 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition duration-300"
           >
             View Research Opportunities
           </a>

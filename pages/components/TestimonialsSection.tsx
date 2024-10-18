@@ -55,17 +55,17 @@ export default function TestimonialsSection() {
   }, [testimonials.length]);
 
   return (
-    <section className="py-16 bg-amber-900" id="testimonials">
+    <section className="py-16 bg-white" id="testimonials">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl text-white font-bold text-center mb-4">What Our Students Say</h2>
-        <p className="text-lg text-white text-center mb-8">
+        <h2 className="text-4xl text-[#316b9e] font-bold text-center mb-4">What Our Students Say</h2>
+        <p className="text-lg text-gray-700 text-center mb-8">
           Our students and alumni share their experiences and insights about studying at Trident.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className={`testimonial-card bg-orange-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform ${
+              className={`testimonial-card bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform ${
                 visibleTestimonials[index] ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
               }`}
             >
@@ -73,7 +73,7 @@ export default function TestimonialsSection() {
                 <img 
                   src={testimonial.image} 
                   alt={testimonial.name} 
-                  className="w-16 h-16 rounded-full object-cover mr-4"
+                  className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-[#316b9e]"
                 />
                 <div>
                   <h3 className="text-xl text-[#316b9e] font-semibold">{testimonial.name}</h3>
@@ -85,8 +85,8 @@ export default function TestimonialsSection() {
           ))}
         </div>
         <div className="mt-12 text-center">
-          <h4 className="text-2xl text-white font-bold mb-2">Join Our Community</h4>
-          <p className="text-lg mb-4 text-white">
+          <h4 className="text-2xl text-[#316b9e] font-bold mb-2">Join Our Community</h4>
+          <p className="text-lg mb-4 text-gray-700">
             Discover the opportunities waiting for you at Trident Group of Institutions.
           </p>
           <a 
