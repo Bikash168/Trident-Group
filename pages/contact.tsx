@@ -37,8 +37,6 @@ export default function Contact() {
                 <div className="mb-4">
                   <label htmlFor="message" className="block text-gray-700 mb-2">Message:</label>
                   <textarea id="message" name="message" rows={`${4}`} required className="w-full border rounded-md p-2"></textarea>
-
-
                 </div>
 
                 <button type="submit" className="bg-[#316b9e] text-white rounded-md py-2 px-4 hover:bg-[#254b7d] transition duration-300">
