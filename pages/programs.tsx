@@ -25,85 +25,184 @@ export default function Programs() {
 
           <h2 className="text-3xl text-[#316b9e] font-semibold text-center mb-12 animate__animated animate__fadeIn">Explore Our Diverse Offerings</h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Program Card 1 */}
-            <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl animate__animated animate__fadeIn animate__delay-1s">
-              <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Bachelor of Technology (B.Tech)</h3>
-              <p className="text-sm text-gray-700 mb-2">
-                The B.Tech program offers comprehensive training in various engineering disciplines, preparing students for innovative careers in technology.
-              </p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> Engineering fundamentals, problem-solving, software development, and project management.</p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Software Engineer, Systems Analyst, Data Scientist, and Network Architect.</p>
-              <p className="text-gray-600">Duration: 4 Years</p>
-              <p className="text-gray-600">Eligibility: 10+2 with PCM</p>
-              <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
-            </div>
+          {/* Engineering Courses */}
+          <div className="mb-16">
+            <h3 className="text-3xl text-[#316b9e] font-semibold text-center mb-8">Engineering Courses</h3>
+            <div className="flex flex-wrap justify-center gap-8">
+              {/* Bachelor of Technology (B.Tech) Card */}
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Bachelor of Technology (B.Tech)</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  The B.Tech program offers comprehensive training in various engineering disciplines, preparing students for innovative careers in technology.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Streams Offered:</strong></p>
+                <ul className="list-disc ml-5 text-sm text-gray-700 mb-2">
+                  <li>Biotechnology</li>
+                  <li>Civil Engineering</li>
+                  <li>Computer Science and Engineering</li>
+                  <li>Computer Science and Engineering (Artificial Intelligence and Machine Learning)</li>
+                  <li>Computer Science and Engineering (Data Science)</li>
+                  <li>Computer Science and Technology</li>
+                  <li>Computer Science and Information Technology</li>
+                  <li>Electrical and Electronics Engineering</li>
+                  <li>Electronics and Telecommunication Engineering</li>
+                  <li>Electronics Engineering (VLSI Design Technology)</li>
+                  <li>Mechanical Engineering</li>
+                </ul>
+                <p className="text-sm text-gray-700 mb-2"><strong>Key Skills:</strong> Engineering fundamentals, software development, problem-solving.</p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Biju Patnaik University of Technology (BPUT)</p>
+                <p className="text-gray-600">Duration: 4 Years | Eligibility: 10+2 with PCM</p>
+              </div>
 
-            {/* Program Card 2 */}
-            <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl animate__animated animate__fadeIn animate__delay-2s">
-              <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Master of Business Administration (MBA)</h3>
-              <p className="text-sm text-gray-700 mb-2">
-                Our MBA program equips students with leadership skills and business acumen, ideal for those aspiring to excel in management roles.
-              </p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> Strategic thinking, financial management, marketing strategies, and leadership.</p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Business Manager, Marketing Director, Financial Analyst, and Operations Manager.</p>
-              <p className="text-gray-600">Duration: 2 Years</p>
-              <p className="text-gray-600">Eligibility: Graduation</p>
-              <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
-            </div>
-
-            {/* Program Card 3 */}
-            <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl animate__animated animate__fadeIn animate__delay-3s">
-              <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Bachelor of Arts (BA)</h3>
-              <p className="text-sm text-gray-700 mb-2">
-                The BA program provides a solid foundation in humanities and social sciences, encouraging critical thinking and creativity.
-              </p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> Critical analysis, communication, research, and cultural awareness.</p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Educator, Social Worker, Content Writer, and Public Relations Specialist.</p>
-              <p className="text-gray-600">Duration: 3 Years</p>
-              <p className="text-gray-600">Eligibility: 10+2</p>
-              <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
-            </div>
-
-            {/* Program Card 4 */}
-            <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl animate__animated animate__fadeIn animate__delay-4s">
-              <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Master of Science (M.Sc)</h3>
-              <p className="text-sm text-gray-700 mb-2">
-                Our M.Sc program focuses on advanced scientific concepts and research methodologies, preparing students for impactful careers in science.
-              </p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> Research techniques, data analysis, and experimental design.</p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Research Scientist, Laboratory Manager, and Data Analyst.</p>
-              <p className="text-gray-600">Duration: 2 Years</p>
-              <p className="text-gray-600">Eligibility: Graduation in Science</p>
-              <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
-            </div>
-
-            {/* Program Card 5 */}
-            <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl animate__animated animate__fadeIn animate__delay-5s">
-              <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Diploma in Hospitality Management</h3>
-              <p className="text-sm text-gray-700 mb-2">
-                This diploma program prepares students for dynamic careers in the hospitality industry, focusing on service excellence and management skills.
-              </p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> Customer service, event planning, and hotel management.</p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Hotel Manager, Event Coordinator, and Customer Relations Manager.</p>
-              <p className="text-gray-600">Duration: 1 Year</p>
-              <p className="text-gray-600">Eligibility: 10+2</p>
-              <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
-            </div>
-
-            {/* Program Card 6 */}
-            <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl animate__animated animate__fadeIn animate__delay-6s">
-              <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Certificate in Digital Marketing</h3>
-              <p className="text-sm text-gray-700 mb-2">
-                Our digital marketing certificate program offers insights into current trends and tools, preparing students for careers in the digital space.
-              </p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Key Skills Learned:</strong> SEO, content marketing, social media strategy, and analytics.</p>
-              <p className="text-sm text-gray-700 mb-2"><strong>Career Paths:</strong> Digital Marketing Specialist, Social Media Manager, and Content Strategist.</p>
-              <p className="text-gray-600">Duration: 6 Months</p>
-              <p className="text-gray-600">Eligibility: Graduation</p>
-              <a href="#" className="text-blue-600 hover:underline mt-2 block">Learn More</a>
+              {/* Master of Technology (M.Tech) Card */}
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Master of Technology (M.Tech)</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  M.Tech offers advanced study in specific engineering areas, focusing on cutting-edge technologies and research.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Streams Offered:</strong></p>
+                <ul className="list-disc ml-5 text-sm text-gray-700 mb-2">
+                  <li>Computer Science and Engineering</li>
+                  <li>Electronics and Telecommunication Engineering</li>
+                  <li>Computer Science and Engineering (Artificial Intelligence and Machine Learning)</li>
+                  <li>Data Science</li>
+                  <li>Electronics Engineering (VLSI Design)</li>
+                  <li>Electric Vehicle Technology</li>
+                  <li>Energy and Environmental Engineering</li>
+                  <li>Environmental Engineering</li>
+                </ul>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Biju Patnaik University of Technology (BPUT)</p>
+                <p className="text-gray-600">Duration: 2 Years | Eligibility: B.Tech/B.E</p>
+              </div>
             </div>
           </div>
+
+          {/* Management Courses */}
+          <div className="mb-16">
+            <h3 className="text-3xl text-[#316b9e] font-semibold text-center mb-8">Management Courses</h3>
+            <div className="flex flex-wrap justify-center gap-8">
+              {/* MBA Program */}
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Master of Business Administration (MBA)</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  Our MBA program prepares students for leadership roles in business with a focus on strategic thinking, management, and specialized skills.
+                </p>
+                <p className="text-sm text-gray-700 mb-2">
+                  <strong>Specializations:</strong> HR Management, Finance Management, Marketing Management, Systems Management, International Business, Sustainability Management, IEV (Innovation, Entrepreneurship and Venture Development), and Environmental Management.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Approved by AICTE and Affiliated to Biju Patnaik University of Technology (BPUT)</p>
+                <p className="text-gray-600">Duration: 2 Years | Eligibility: Graduation</p>
+              </div>
+
+              {/* BBA Program */}
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Bachelor of Business Administration (BBA)</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  The BBA program focuses on developing foundational skills in business, management, and leadership to prepare students for the corporate world.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Approved by AICTE and Govt. of Odisha. Affiliated to Utkal University</p>
+                <p className="text-gray-600">Duration: 3 Years | Eligibility: 10+2</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Biotechnology and Health Science Courses */}
+          <div className="mb-16">
+            <h3 className="text-3xl text-[#316b9e] font-semibold text-center mb-8">Biotechnology Courses</h3>
+            <div className="flex flex-wrap justify-center gap-8">
+
+              {/* UG Courses */}
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Bachelor of Technology (B.Tech) in Biotechnology</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  This program offers comprehensive training in biotechnology, covering genetic engineering, molecular biology, and bioprocessing technologies.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Approved by AICTE and Affiliated to Biju Patnaik University of Technology (BPUT)</p>
+                <p className="text-gray-600">Duration: 4 Years | Eligibility: 10+2 (Science)</p>
+              </div>
+
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Bachelor of Science (Hons) in Biotechnology</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  Focused on research in biotechnology, this course covers various aspects of biotechnology and its applications.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Approved by AICTE and affiliated to Utkal University</p>
+                <p className="text-gray-600">Duration: 3 Years | Eligibility: 10+2 (Science)</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h3 className="text-3xl text-[#316b9e] font-semibold text-center mb-8">Postgraduate Biotechnology Courses</h3>
+            <div className="flex flex-wrap justify-center gap-8">
+              {/* M.Sc. Biotechnology */}
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">M.Sc. Biotechnology</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  This program delves deep into biotechnological applications, focusing on research and development in the biotech field.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Approved by AICTE and affiliated to Utkal University</p>
+                <p className="text-gray-600">Duration: 2 Years | Eligibility: Graduation in Science</p>
+              </div>
+
+              {/* M.Sc. Applied Microbiology */}
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">M.Sc. Applied Microbiology</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  This course emphasizes microbial applications in various industries, focusing on practical and theoretical knowledge.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Approved by AICTE and affiliated to Utkal University</p>
+                <p className="text-gray-600">Duration: 2 Years | Eligibility: Graduation in Science</p>
+              </div>
+
+              {/* M.Sc. Bio-Informatics */}
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">M.Sc. Bio-Informatics</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  This interdisciplinary program merges biology with computer science, focusing on data analysis and computational methods in biology.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Approved by AICTE and affiliated to Utkal University</p>
+                <p className="text-gray-600">Duration: 2 Years | Eligibility: Graduation in Science</p>
+              </div>
+
+              {/* M.Sc. Environmental Science in Biotechnology */}
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">M.Sc. Environmental Science in Biotechnology</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  This program focuses on the intersection of environmental science and biotechnology, addressing ecological challenges through biotech solutions.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Approved by AICTE and affiliated to Utkal University</p>
+                <p className="text-gray-600">Duration: 2 Years | Eligibility: Graduation in Science</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Social Work/Public Health Courses */}
+          <div className="mb-16">
+            <h3 className="text-3xl text-[#316b9e] font-semibold text-center mb-8">Social Work/Public Health Courses</h3>
+            <div className="flex flex-wrap justify-center gap-8">
+              {/* Master of Social Work (MSW) Card */}
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Master of Social Work (MSW)</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  The MSW program equips students with the skills needed to engage in community service and address social issues effectively.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Approved by AICTE and affiliated to Utkal University</p>
+                <p className="text-gray-600">Duration: 2 Years | Eligibility: Graduation in any discipline</p>
+              </div>
+
+              {/* Master in Public Health (MPH) Card */}
+              <div className="bg-gray-100 rounded-lg shadow-lg p-4 transition transform duration-300 hover:scale-105 hover:shadow-xl w-full max-w-xs">
+                <h3 className="text-lg text-[#316b9e] font-semibold mb-2">Master in Public Health (MPH)</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  The MPH program equips students with the knowledge and skills to address public health challenges, focusing on community health improvement.
+                </p>
+                <p className="text-sm text-gray-700 mb-2"><strong>Affiliation:</strong> Approved by AICTE and affiliated to Utkal University</p>
+                <p className="text-gray-600">Duration: 2 Years | Eligibility: Graduation in relevant field</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
     </Layout>
