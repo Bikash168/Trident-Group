@@ -185,7 +185,6 @@ export default function Layout({ children }: LayoutProps) {
               <li><Link href="https://tat.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Technology</Link></li>
               <li><Link href="https://tact.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Creative Technology</Link></li>
               <li><a href="https://taps.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Professional Studies</a></li>
-              <li><Link href="https://trident.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Group of Institutions</Link></li>
               <li><a href="https://dfgroup.in/" className="text-gray-700 block hover:text-blue-600">The DF Group</a></li>
             </ul>
           </div>
@@ -194,7 +193,7 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
             <address>
-            Trident Group of Institutions,
+              Trident Group of Institutions,
               <br />F2, Chandaka Industrial Estate,
               <br />Technology Corridor, Infocity Area,
               <br />Chandrasekharpur, Bhubaneswar,

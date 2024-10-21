@@ -77,9 +77,10 @@ const programs = [
 ];
 
 export default function ProgramsOfferedSection() {
-  const [currentIndex, setCurrentIndex] = useState(1); // Start from the first card after the cloned one
-  const cardsToShow = 5; // Default number of cards to show at a time
-  const totalSlides = programs.length; // Total number of original programs
+  const [currentIndex, setCurrentIndex] = useState(1); // Start from the first real slide
+  const [isTransitioning, setIsTransitioning] = useState(true);
+
+  const totalSlides = programs.length + 2; // Including duplicate slides
 
   // Function to automatically change the index every few seconds
   useEffect(() => {
@@ -88,29 +89,27 @@ export default function ProgramsOfferedSection() {
     }, 3000); // Adjust timing as needed
 
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, []);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => {
-      if (prevIndex >= totalSlides + 1) {
-        return 1; // Reset to the first card after the cloned one
+      const nextIndex = prevIndex + 1;
+      if (nextIndex === totalSlides) {
+        return 1; // Reset to the first real slide
       }
-      return prevIndex + 1;
+      return nextIndex;
     });
+    setIsTransitioning(true);
   };
 
   const handleTransitionEnd = () => {
-    if (currentIndex === totalSlides + 1) {
-      setCurrentIndex(1); // Reset to the first original card
+    if (currentIndex === 0) {
+      setCurrentIndex(programs.length);
+    } else if (currentIndex === totalSlides - 1) {
+      setCurrentIndex(1);
     }
+    setIsTransitioning(false);
   };
-
-  // Create an array for the displayed cards, including cloned ones
-  const displayedPrograms = [
-    programs[totalSlides - 1], // Clone the last card
-    ...programs,
-    programs[0], // Clone the first card
-  ];
 
   return (
     <section className="py-16 bg-gray-50" id="programs">
@@ -120,18 +119,31 @@ export default function ProgramsOfferedSection() {
           <div
             className={`${styles.cardWrapper} flex transition-transform duration-500`}
             style={{
-              transform: `translateX(-${(currentIndex - 1) * (100 / cardsToShow)}%)`,
+              transform: `translateX(-${currentIndex * 100}%)`,
+              transition: isTransitioning ? 'transform 0.5s ease' : 'none',
             }}
             onTransitionEnd={handleTransitionEnd}
           >
-            {displayedPrograms.map((program, index) => (
-              <div key={index} className={`${styles.card} flex-shrink-0`}>
+            <div className={`${styles.card} min-w-full flex-shrink-0 px-4`}>
+              <h3 className="text-2xl text-[#316b9e] font-semibold mb-2">{programs[programs.length - 1].title}</h3>
+              <p className="text-gray-700 mb-4">{programs[programs.length - 1].description}</p>
+              <p className="text-gray-700"><strong>Duration:</strong> {programs[programs.length - 1].duration}</p>
+              <p className="text-gray-700"><strong>Affiliation:</strong> {programs[programs.length - 1].affiliation}</p>
+            </div>
+            {programs.map((program, index) => (
+              <div key={index} className={`${styles.card} min-w-full flex-shrink-0 px-4`}>
                 <h3 className="text-2xl text-[#316b9e] font-semibold mb-2">{program.title}</h3>
                 <p className="text-gray-700 mb-4">{program.description}</p>
                 <p className="text-gray-700"><strong>Duration:</strong> {program.duration}</p>
-                <p className="text-gray-700"><strong>Affiliation:</strong> {program.affiliation}</p>
+                <p className="text-gray-700"><strong>Affiliation:</strong> {program.affiliation}</p> {/* Corrected from programs.affiliation */}
               </div>
             ))}
+            <div className={`${styles.card} min-w-full flex-shrink-0 px-4`}>
+              <h3 className="text-2xl text-[#316b9e] font-semibold mb-2">{programs[0].title}</h3>
+              <p className="text-gray-700 mb-4">{programs[0].description}</p>
+              <p className="text-gray-700"><strong>Duration:</strong> {programs[0].duration}</p>
+              <p className="text-gray-700"><strong>Affiliation:</strong> {programs[0].affiliation}</p>
+            </div>
           </div>
         </div>
       </div>
