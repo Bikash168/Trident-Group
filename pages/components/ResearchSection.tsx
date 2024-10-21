@@ -111,12 +111,7 @@ export default function ResearchSection() {
               <h4 className="text-xl text-[#316b9e] font-semibold mb-2">{project.title}</h4>
               <p className="text-gray-700 mb-4">{project.description}</p>
               <p className="text-gray-700 mb-4"><strong>Faculty Lead:</strong> {project.facultyLead}</p>
-              <a 
-                href={project.link} 
-                className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-lg font-semibold transition duration-300"
-              >
-                Learn More
-              </a>
+              {/* Removed Learn More button */}
             </div>
           ))}
         </div>
@@ -127,7 +122,7 @@ export default function ResearchSection() {
             Explore opportunities for internships and student projects in our research labs.
           </p>
           <a 
-            href="/research/internships" 
+            href="/internships" 
             className="bg-blue-500 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition duration-300"
           >
             View Research Opportunities
