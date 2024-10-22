@@ -10,7 +10,7 @@ const tAcademyProfessional = '/academy-professional.png';
 export default function AnimationSection() {
   return (
     <section className="flex flex-col justify-center items-center min-h-screen bg-gradient-to-r from-green-50 to-blue-50 p-4">
-      
+
       {/* Heading */}
       <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-[#316b9e] text-center transition-transform transform hover:scale-105">
         Trident Group Colleges
@@ -21,15 +21,15 @@ export default function AnimationSection() {
         The <Link href="https://trident.ac.in/" target="_blank" className="text-blue-600 underline hover:text-blue-800 transition duration-200">
           Trident Group of Institutions
         </Link>, based in Bhubaneswar, Odisha, is a premier educational organization with a mission to provide quality education and professional skills to students across various disciplines.
-        It offers programs in technology, management, creative arts, and professional studies through its affiliated colleges. The group fosters a culture of innovation, leadership, and sustainability, ensuring students are equipped to meet the challenges of a rapidly evolving global workforce. 
-        With state-of-the-art infrastructure, experienced faculty, and a focus on holistic development, 
+        It offers programs in technology, management, creative arts, and professional studies through its affiliated colleges. The group fosters a culture of innovation, leadership, and sustainability, ensuring students are equipped to meet the challenges of a rapidly evolving global workforce.
+        With state-of-the-art infrastructure, experienced faculty, and a focus on holistic development,
         <Link href="https://trident.ac.in/" target="_blank" className="text-blue-600 underline hover:text-blue-800 transition duration-200">
           Trident Group of Institutions
         </Link> is dedicated to nurturing future leaders and change-makers.
       </p>
-      
+
       {/* Add margin between description and logo section */}
-      <div className="relative w-[80vw] max-w-[500px] h-[80vw] max-h-[500px] bg-white rounded-full shadow-2xl flex justify-center items-center mt-6 transition-shadow duration-300 hover:shadow-xl"> 
+      <div className="relative w-[80vw] max-w-[500px] h-[80vw] max-h-[500px] bg-white rounded-full shadow-2xl flex justify-center items-center mt-6 transition-shadow duration-300 hover:shadow-xl">
         {/* Central logo */}
         <div className="absolute inset-0 flex justify-center items-center z-10">
           <Image
@@ -67,7 +67,7 @@ export default function AnimationSection() {
         <Link
           href="https://www.trident.ac.in/creative"
           target="_blank"
-          className="absolute left-[-60px] top-[50%] transform -translate-y-1/2 sm:left-[-100px] hover:scale-110 transition-transform duration-300"
+          className="absolute left-[-60px] top-[50%] transform -translate-y-1/2 sm:left-[-50px] hover:scale-110 transition-transform duration-300"
         >
           <div className="flex flex-col items-center">
             <Image
@@ -79,8 +79,8 @@ export default function AnimationSection() {
               quality={100}
             />
             <p className="mt-2 text-center text-xs font-semibold">
-  Trident Academy <br /> of Creative Technology
-</p>
+              Trident Academy <br /> of Creative Technology
+            </p>
 
           </div>
         </Link>
@@ -88,7 +88,7 @@ export default function AnimationSection() {
         <Link
           href="https://www.trident.ac.in/professional"
           target="_blank"
-          className="absolute right-[-60px] top-[50%] transform -translate-y-1/2 sm:right-[-100px] hover:scale-110 transition-transform duration-300"
+          className="absolute right-[-60px] top-[50%] transform -translate-y-1/2 sm:right-[-50px] hover:scale-110 transition-transform duration-300"
         >
           <div className="flex flex-col items-center">
             <Image
@@ -99,9 +99,9 @@ export default function AnimationSection() {
               className="w-[20vw] sm:w-[10vw] object-contain transition-transform duration-300"
               quality={100}
             />
-           <p className="mt-2 text-center text-xs font-semibold">
-  Trident Academy <br /> of Professional Studies
-</p>
+            <p className="mt-2 text-center text-xs font-semibold">
+              Trident Academy <br /> of Professional Studies
+            </p>
 
           </div>
         </Link>
