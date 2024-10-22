@@ -263,7 +263,7 @@ export default function Layout({ children }: LayoutProps) {
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Additional Links</h3>
             <ul className="text-sm space-y-2">
               <li>
-                <Link href="/privacy-policy" className="hover:text-blue-600">Privacy Policy</Link>
+                <Link href="/privacy-polic" className="hover:text-blue-600">Privacy Policy</Link>
               </li>
               <li>
                 <Link href="/terms-of-service" className="hover:text-blue-600">Terms of Service</Link>
