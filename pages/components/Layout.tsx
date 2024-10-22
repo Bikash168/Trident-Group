@@ -79,19 +79,15 @@ export default function Layout({ children }: LayoutProps) {
             </div>
           </div>
         </div>
+
         {/* New Button Line Menu */}
         <div className="flex flex-wrap justify-start space-x-1 bg-[#316b9e] p-2">
-          <Link href="/library" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Library</Link>
-          <Link href="/notices" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Notices</Link>
-          <Link href="/alumni" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Alumni</Link>
-          <Link href="/staff" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Staff</Link>
-          <Link href="/exam" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Exam</Link>
-          <Link href="/placement" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Placement</Link>
-          <Link href="/founder" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Founder</Link>
-          <Link href="/brochure" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Brochure</Link>
-          <Link href="/sports" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Sports</Link>
+          {['Library', 'Notices', 'Alumni', 'Staff', 'Exam', 'Placement', 'Founder', 'Brochure', 'Sports'].map((item) => (
+            <Link key={item} href={`/${item.toLowerCase()}`} className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">
+              {item}
+            </Link>
+          ))}
         </div>
-
 
         {/* Main Navigation */}
         <div className="container mx-auto p-4 flex justify-between items-center">
@@ -108,79 +104,40 @@ export default function Layout({ children }: LayoutProps) {
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-4 md:space-x-6">
             <ul className="flex space-x-4 md:space-x-6">
-              <li>
-                <Link href="/about-us" className="hover:text-blue-600">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/programs" className="hover:text-blue-600">
-                  Programs
-                </Link>
-              </li>
-              <li>
-                <Link href="/news-and-events" className="hover:text-blue-600">
-                  News & Events
-                </Link>
-              </li>
-              <li>
-                <Link href="/explore" className="hover:text-blue-600">
-                  Explore Trident
-                </Link>
-              </li>
-              <li>
-                <Link href="/admissions" className="hover:text-blue-600">
-                  Admissions
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-blue-600">
-                  Contact
-                </Link>
-              </li>
+              {['About Us', 'Programs', 'News and Events', 'Explore Trident', 'Admissions', 'Contact'].map((item) => (
+                <li key={item}>
+                  <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600">
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
-
-
 
         {/* Mobile Menu */}
         {isMenuOpen && (
           <nav className="md:hidden bg-gray-100 shadow-lg">
             <ul className="flex flex-col items-center space-y-4 py-4">
-              <li>
-                <Link href="/about-us" className="hover:text-blue-600" onClick={toggleMenu}>
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/programs" className="hover:text-blue-600" onClick={toggleMenu}>
-                  Programs
-                </Link>
-              </li>
-              <li>
-                <Link href="/news-and-events" className="hover:text-blue-600" onClick={toggleMenu}>
-                  News & Events
-                </Link>
-              </li>
-              <li>
-                <Link href="/explore" className="hover:text-blue-600" onClick={toggleMenu}>
-                  Explore Trident
-                </Link>
-              </li>
-              <li>
-                <Link href="/admissions" className="hover:text-blue-600">
-                  Admissions
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-blue-600" onClick={toggleMenu}>
-                  Contact
-                </Link>
-              </li>
+              {['About Us', 'Programs', 'News and Events', 'Explore Trident', 'Admissions', 'Contact'].map((item) => (
+                <li key={item}>
+                  <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600" onClick={toggleMenu}>
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
         )}
+
+        {/* Announcements Section */}
+        <div className="bg-[#316b9e] p-2 text-sm text-white overflow-hidden">
+          <div className="whitespace-nowrap animate-marquee">
+            <span>⭐ Announcement: Upcoming Admission Dates are Now Open!</span>
+            <span className="mx-8">⭐ Announcement: Upcoming Admission Dates are Now Open!</span>
+          </div>
+        </div>
+
       </header>
 
       {/* Main Content */}
@@ -202,11 +159,11 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/" className="text-gray-700 block hover:text-blue-600">Home</Link></li>
-              <li><Link href="/about-us" className="text-gray-700 block hover:text-blue-600">About Us</Link></li>
-              <li><Link href="/programs" className="text-gray-700 block hover:text-blue-600">Programs</Link></li>
-              <li><Link href="/news-and-events" className="text-gray-700 block hover:text-blue-600">News & Events</Link></li>
-              <li><Link href="/contact" className="text-gray-700 block hover:text-blue-600">Contact</Link></li>
+              {['Home', 'About Us', 'Programs', 'News & Events', 'Contact'].map((item) => (
+                <li key={item}>
+                  <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-gray-700 block hover:text-blue-600">{item}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -214,32 +171,31 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Trident Group Websites</h3>
             <ul className="space-y-2">
-              <li><Link href="https://tat.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Technology</Link></li>
-              <li><Link href="https://tact.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Creative Technology</Link></li>
-              <li><Link href="https://taps.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Professional Studies</Link></li>
-              <li><Link href="https://dfgroup.in/" className="text-gray-700 block hover:text-blue-600">The DF Group</Link></li>
+              {[
+                { name: 'Trident Academy of Technology', link: 'https://tat.ac.in/' },
+                { name: 'Trident Academy of Creative Technology', link: 'https://tact.ac.in/' },
+                { name: 'Trident Academy of Professional Studies', link: 'https://taps.ac.in/' },
+                { name: 'The DF Group', link: 'https://dfgroup.in/' },
+              ].map(({ name, link }) => (
+                <li key={name}>
+                  <Link href={link} className="text-gray-700 block hover:text-blue-600" target="_blank" rel="noopener noreferrer">{name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact Section */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
-            <address className="text-sm not-italic">
-              Trident Group of Institutions, <br />
-              Bhubaneswar, Odisha, India <br />
-              <span className="flex items-center">
-                <FaPhoneAlt className="mr-1" /> +91 98611 91195
-              </span>
-              <span className="flex items-center">
-                <FaEnvelope className="mr-1" /> info@trident.ac.in
-              </span>
-            </address>
+            <p className="text-sm">Address: Bhubaneswar, Odisha, India</p>
+            <p className="text-sm">Phone: +91 98611 91195</p>
+            <p className="text-sm">Email: info@trident.ac.in</p>
           </div>
         </div>
 
-        {/* Copyright Section */}
-        <div className="text-center text-sm mt-6">
-          <p>&copy; {new Date().getFullYear()} Trident Group of Institutions. All rights reserved.</p>
+        {/* Bottom Footer */}
+        <div className="text-center mt-6 border-t border-gray-300 pt-4">
+          <p className="text-sm">© 2024 Trident Group of Institutions. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
