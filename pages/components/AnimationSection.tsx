@@ -78,7 +78,7 @@ export default function AnimationSection() {
               className="w-[16vw] sm:w-[8vw] object-contain transition-transform duration-300"
               quality={100}
             />
-            <p className="mt-2 text-center text-xs font-semibold sm:left-[-90px]">
+            <p className="mt-2 text-center text-xs font-semibold sm:left-[-100px]">
               Trident Academy <br /> of Creative Technology
             </p>
 
@@ -99,7 +99,7 @@ export default function AnimationSection() {
               className="w-[20vw] sm:w-[10vw] object-contain transition-transform duration-300"
               quality={100}
             />
-            <p className="mt-2 text-center text-xs font-semibold sm:right-[-90px]">
+            <p className="mt-2 text-center text-xs font-semibold sm:right-[-100px]">
               Trident Academy <br /> of Professional Studies
             </p>
 
