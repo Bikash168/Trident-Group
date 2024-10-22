@@ -82,11 +82,15 @@ export default function Layout({ children }: LayoutProps) {
 
         {/* New Button Line Menu */}
         <div className="flex flex-wrap justify-start space-x-1 bg-[#316b9e] p-2">
-          {['Library', 'Notices', 'Alumni', 'Staff', 'Exam', 'Placement', 'Founder', 'Brochure', 'Sports'].map((item) => (
-            <Link key={item} href={`/${item.toLowerCase()}`} className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">
-              {item}
-            </Link>
-          ))}
+          <Link href="/library" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Library</Link>
+          <Link href="/notices" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Notices</Link>
+          <Link href="/alumni" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Alumni</Link>
+          <Link href="/staff" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Staff</Link>
+          <Link href="/exam" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Exam</Link>
+          <Link href="/placement" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Placement</Link>
+          <Link href="/founder" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Founder</Link>
+          <Link href="/brochure" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Brochure</Link>
+          <Link href="/sports" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Sports</Link>
         </div>
 
         {/* Main Navigation */}
@@ -104,13 +108,36 @@ export default function Layout({ children }: LayoutProps) {
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-4 md:space-x-6">
             <ul className="flex space-x-4 md:space-x-6">
-              {['About Us', 'Programs', 'News and Events', 'Explore Trident', 'Admissions', 'Contact'].map((item) => (
-                <li key={item}>
-                  <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link href="/about-us" className="hover:text-blue-600">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/programs" className="hover:text-blue-600">
+                  Programs
+                </Link>
+              </li>
+              <li>
+                <Link href="/news-and-events" className="hover:text-blue-600">
+                  News & Events
+                </Link>
+              </li>
+              <li>
+                <Link href="/explore" className="hover:text-blue-600">
+                  Explore Trident
+                </Link>
+              </li>
+              <li>
+                <Link href="/admissions" className="hover:text-blue-600">
+                  Admissions
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-blue-600">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
@@ -119,13 +146,36 @@ export default function Layout({ children }: LayoutProps) {
         {isMenuOpen && (
           <nav className="md:hidden bg-gray-100 shadow-lg">
             <ul className="flex flex-col items-center space-y-4 py-4">
-              {['About Us', 'Programs', 'News and Events', 'Explore Trident', 'Admissions', 'Contact'].map((item) => (
-                <li key={item}>
-                  <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600" onClick={toggleMenu}>
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link href="/about-us" className="hover:text-blue-600" onClick={toggleMenu}>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/programs" className="hover:text-blue-600" onClick={toggleMenu}>
+                  Programs
+                </Link>
+              </li>
+              <li>
+                <Link href="/news-and-events" className="hover:text-blue-600" onClick={toggleMenu}>
+                  News & Events
+                </Link>
+              </li>
+              <li>
+                <Link href="/explore" className="hover:text-blue-600" onClick={toggleMenu}>
+                  Explore Trident
+                </Link>
+              </li>
+              <li>
+                <Link href="/admissions" className="hover:text-blue-600">
+                  Admissions
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-blue-600" onClick={toggleMenu}>
+                  Contact
+                </Link>
+              </li>
             </ul>
           </nav>
         )}
@@ -137,7 +187,6 @@ export default function Layout({ children }: LayoutProps) {
             <span className="mx-8">⭐ Announcement: Upcoming Admission Dates are Now Open!</span>
           </div>
         </div>
-
       </header>
 
       {/* Main Content */}
@@ -159,11 +208,11 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {['Home', 'About Us', 'Programs', 'News & Events', 'Contact'].map((item) => (
-                <li key={item}>
-                  <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-gray-700 block hover:text-blue-600">{item}</Link>
-                </li>
-              ))}
+              <li><Link href="/" className="text-gray-700 block hover:text-blue-600">Home</Link></li>
+              <li><Link href="/about-us" className="text-gray-700 block hover:text-blue-600">About Us</Link></li>
+              <li><Link href="/programs" className="text-gray-700 block hover:text-blue-600">Programs</Link></li>
+              <li><Link href="/news-and-events" className="text-gray-700 block hover:text-blue-600">News & Events</Link></li>
+              <li><Link href="/contact" className="text-gray-700 block hover:text-blue-600">Contact</Link></li>
             </ul>
           </div>
 
@@ -171,29 +220,30 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Trident Group Websites</h3>
             <ul className="space-y-2">
-              {[
-                { name: 'Trident Academy of Technology', link: 'https://tat.ac.in/' },
-                { name: 'Trident Academy of Creative Technology', link: 'https://tact.ac.in/' },
-                { name: 'Trident Academy of Professional Studies', link: 'https://taps.ac.in/' },
-                { name: 'The DF Group', link: 'https://dfgroup.in/' },
-              ].map(({ name, link }) => (
-                <li key={name}>
-                  <Link href={link} className="text-gray-700 block hover:text-blue-600" target="_blank" rel="noopener noreferrer">{name}</Link>
-                </li>
-              ))}
+              <li><Link href="https://tat.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Technology</Link></li>
+              <li><Link href="https://tact.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Creative Technology</Link></li>
+              <li><Link href="https://taps.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Professional Studies</Link></li>
+              <li><Link href="https://dfgroup.in/" className="text-gray-700 block hover:text-blue-600">The DF Group</Link></li>
             </ul>
           </div>
 
           {/* Contact Section */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
-            <p className="text-sm">Address:Trident Group of Institutions
-              F2, Chandaka Industrial Estate,
-              Technology Corridor, Infocity Area,
-              Chandrasekharpur, Bhubaneswar,
-              Odisha. 751024</p>
-            <p className="text-sm">Phone: +91 98611 91195</p>
-            <p className="text-sm">Email: info@trident.ac.in</p>
+            <address className="text-sm not-italic">
+              Trident Group of Institutions, <br />
+              F2, Chandaka Industrial Estate,<br />
+              Technology Corridor, Infocity Area,<br />
+              Chandrasekharpur, Bhubaneswar,<br />
+              Odisha, India. 751024 <br /><br />
+
+              <span className="flex items-center"><br />
+                <FaPhoneAlt className="mr-1" /> +91 98611 91195
+              </span><br />
+              <span className="flex items-center">
+                <FaEnvelope className="mr-1" /> info@trident.ac.in
+              </span><br />
+            </address>
           </div>
         </div>
 
