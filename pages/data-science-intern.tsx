@@ -97,14 +97,13 @@ export default function DataScienceInternshipApplication() {
               </div>
               <div className="mb-4">
                 <label className="block text-gray-700 font-semibold mb-2">Motivation Statement:</label>
-                <textarea
-                  name="motivation"
-                  value={formData.motivation}
-                  onChange={handleChange}
-                  required
-                  rows="4"
-                  className="border rounded-lg w-full py-2 px-3 text-gray-700"
-                />
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows={4} 
+                  required 
+                  className="w-full border border-gray-300 rounded-md p-2"
+                ></textarea>
               </div>
               <button
                 type="submit"
