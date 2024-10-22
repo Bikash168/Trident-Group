@@ -17,7 +17,7 @@ export default function AnimationSection() {
       </h1>
 
       {/* Description Content */}
-      <p className="text-center max-w-3xl text-gray-700 mb-8">
+      <p className="text-center max-w-3xl text-gray-700 mb-8 px-4">
         The <Link href="https://trident.ac.in/" target="_blank" className="text-blue-600 underline hover:text-blue-800 transition duration-200">
           Trident Group of Institutions
         </Link>, based in Bhubaneswar, Odisha, is a premier educational organization with a mission to provide quality education and professional skills to students across various disciplines.
@@ -119,6 +119,13 @@ export default function AnimationSection() {
             bottom: 20px !important;
             left: 50% !important;
             transform: translate(-50%, 0) !important;
+          }
+          h1 {
+            font-size: 2.5rem; /* Adjust heading size for mobile */
+          }
+          p {
+            font-size: 0.875rem; /* Adjust paragraph text size for mobile */
+            padding: 0 1rem; /* Add some padding for mobile */
           }
         }
       `}</style>
