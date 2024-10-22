@@ -14,7 +14,6 @@ import {
   FaBars,
   FaTimes
 } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
 
 interface LayoutProps {
   children: ReactNode;
@@ -145,7 +144,7 @@ export default function Layout({ children }: LayoutProps) {
                 </Link>
               </li>
               <li>
-                <Link href="/explore" className="hover:text-blue-600">
+                <Link href="/explore" className="hover:text-blue-600" onClick={toggleMenu}>
                   Explore Trident
                 </Link>
               </li>
@@ -160,7 +159,7 @@ export default function Layout({ children }: LayoutProps) {
       </header>
 
       {/* Main Content */}
-      <main>{children}</main>
+      <main className="container mx-auto px-4 py-6">{children}</main>
 
       {/* Footer */}
       <footer className="bg-gray-100 text-gray-700 p-6 md:p-8">
@@ -192,25 +191,30 @@ export default function Layout({ children }: LayoutProps) {
             <ul className="space-y-2">
               <li><Link href="https://tat.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Technology</Link></li>
               <li><Link href="https://tact.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Creative Technology</Link></li>
-              <li><a href="https://taps.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Professional Studies</a></li>
-              <li><a href="https://dfgroup.in/" className="text-gray-700 block hover:text-blue-600">The DF Group</a></li>
+              <li><Link href="https://taps.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Professional Studies</Link></li>
+              <li><Link href="https://dfgroup.in/" className="text-gray-700 block hover:text-blue-600">The DF Group</Link></li>
             </ul>
           </div>
 
           {/* Contact Section */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
-            <address>
-              Trident Group of Institutions,
-              <br />F2, Chandaka Industrial Estate,
-              <br />In front of Infocity, Bhubaneswar-751024
+            <address className="text-sm not-italic">
+              Trident Group of Institutions, <br />
+              Bhubaneswar, Odisha, India <br />
+              <span className="flex items-center">
+                <FaPhoneAlt className="mr-1" /> +91 98611 91195
+              </span>
+              <span className="flex items-center">
+                <FaEnvelope className="mr-1" /> info@trident.ac.in
+              </span>
             </address>
-            <p className="mt-2">Phone: +91 98611 91195</p>
-            <p className="mt-2">Email: info@trident.ac.in</p>
           </div>
         </div>
-        <div className="text-center text-sm mt-8">
-          &copy; {new Date().getFullYear()} Trident Group of Institutions. All Rights Reserved.
+
+        {/* Copyright Section */}
+        <div className="text-center text-sm mt-6">
+          <p>&copy; {new Date().getFullYear()} Trident Group of Institutions. All rights reserved.</p>
         </div>
       </footer>
     </div>
