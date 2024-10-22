@@ -22,14 +22,14 @@ export default function InternshipsPage() {
       description: "Contribute to AI-driven projects in healthcare and environmental studies.",
       requirements: "Background in Artificial Intelligence or Computer Science.",
       duration: "4 months",
-      applicationLink: "/apply/ai-research-intern"
+      applicationLink: "/ai-research-intern"
     },
     {
       title: "Environmental Studies Intern",
       description: "Participate in field studies and contribute to environmental conservation efforts.",
       requirements: "Students in Environmental Studies or related disciplines.",
       duration: "2 months",
-      applicationLink: "/apply/environmental-studies-intern"
+      applicationLink: "/environmental-studies-intern"
     }
   ];
 
