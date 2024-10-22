@@ -110,7 +110,13 @@ export default function Admissions() {
             />
                <div className="mb-4">
                   <label htmlFor="message" className="block text-gray-700 mb-2 text-sm">Message:</label>
-                  <textarea id="message" name="message" rows={4} required className="w-full border rounded-md p-2 text-sm"></textarea>
+                  <textarea
+  placeholder="Your Message"
+  className="p-3 border border-gray-300 rounded w-full"
+  rows={5} // Corrected by removing quotes to pass a number instead of a string
+  required
+></textarea>
+
                 </div>
             <button
               type="submit"
