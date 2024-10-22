@@ -26,7 +26,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
   }
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Head>
         <title>Trident Group of Institutions</title>
       </Head>
@@ -35,7 +35,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
       <Layout>
         <HeroSection />
         <AboutSection />
-        <AnimationSection/>
+        <AnimationSection />
         <ProgramsOfferedSection />
         <NewsAndEventsSection />
         <ResearchSection />
@@ -44,6 +44,20 @@ export default function MainLayout({ children }: MainLayoutProps) {
        
         {children} {/* Render any additional content passed as children */}
       </Layout>
+
+      {/* Add some spacing and styling to the layout */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          /* Adjust text sizes for smaller screens */
+          h1 {
+            font-size: 1.75rem; /* Smaller heading for mobile */
+          }
+          p {
+            font-size: 0.875rem; /* Smaller paragraph text */
+          }
+          /* Additional adjustments can go here */
+        }
+      `}</style>
     </div>
   );
 }

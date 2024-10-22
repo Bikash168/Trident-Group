@@ -112,6 +112,11 @@ export default function Layout({ children }: LayoutProps) {
                 </Link>
               </li>
               <li>
+                <Link href="/explore" className="hover:text-blue-600">
+                  Explore Trident
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:text-blue-600">
                   Contact
                 </Link>
@@ -137,6 +142,11 @@ export default function Layout({ children }: LayoutProps) {
               <li>
                 <Link href="/news-and-events" className="hover:text-blue-600" onClick={toggleMenu}>
                   News & Events
+                </Link>
+              </li>
+              <li>
+                <Link href="/explore" className="hover:text-blue-600">
+                  Explore Trident
                 </Link>
               </li>
               <li>
