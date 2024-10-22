@@ -187,7 +187,11 @@ export default function Layout({ children }: LayoutProps) {
           {/* Contact Section */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
-            <p className="text-sm">Address: Bhubaneswar, Odisha, India</p>
+            <p className="text-sm">Address:Trident Group of Institutions
+              F2, Chandaka Industrial Estate,
+              Technology Corridor, Infocity Area,
+              Chandrasekharpur, Bhubaneswar,
+              Odisha. 751024</p>
             <p className="text-sm">Phone: +91 98611 91195</p>
             <p className="text-sm">Email: info@trident.ac.in</p>
           </div>
