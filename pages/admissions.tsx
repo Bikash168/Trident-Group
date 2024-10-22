@@ -108,12 +108,13 @@ export default function Admissions() {
               className="p-3 border border-gray-300 rounded w-full"
               required
             />
-            <textarea
-              placeholder="Your Message"
-              className="p-3 border border-gray-300 rounded w-full"
-              rows="5"
-              required
-            ></textarea>
+           <textarea 
+                  id="message" 
+                  name="message" 
+                  rows={4} 
+                  required 
+                  className="w-full border border-gray-300 rounded-md p-2"
+                ></textarea>
             <button
               type="submit"
               className="bg-[#316b9e] text-white py-3 px-8 rounded-lg shadow-lg hover:bg-[#25537b] transition duration-300 ease-in-out transform hover:scale-105"
