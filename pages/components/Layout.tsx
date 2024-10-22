@@ -79,18 +79,18 @@ export default function Layout({ children }: LayoutProps) {
             </div>
           </div>
         </div>
-       {/* New Button Line Menu */}
-<div className="flex flex-wrap justify-start space-x-1 bg-[#316b9e] p-2">
-  <Link href="/library" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Library</Link>
-  <Link href="/notices" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Notices</Link>
-  <Link href="/alumni" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Alumni</Link>
-  <Link href="/staff" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Staff</Link>
-  <Link href="/exam" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Exam</Link>
-  <Link href="/placement" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Placement</Link>
-  <Link href="/founder" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Founder</Link>
-  <Link href="/brochure" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Brochure</Link>
-  <Link href="/sports" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Sports</Link>
-</div>
+        {/* New Button Line Menu */}
+        <div className="flex flex-wrap justify-start space-x-1 bg-[#316b9e] p-2">
+          <Link href="/library" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Library</Link>
+          <Link href="/notices" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Notices</Link>
+          <Link href="/alumni" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Alumni</Link>
+          <Link href="/staff" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Staff</Link>
+          <Link href="/exam" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Exam</Link>
+          <Link href="/placement" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Placement</Link>
+          <Link href="/founder" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Founder</Link>
+          <Link href="/brochure" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Brochure</Link>
+          <Link href="/sports" className="bg-[#316b9e] text-white px-3 py-1 rounded hover:bg-[#255f8a] text-sm md:text-base">Sports</Link>
+        </div>
 
 
         {/* Main Navigation */}
