@@ -12,7 +12,7 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
   FaBars,
-  FaTimes
+  FaTimes,
 } from 'react-icons/fa';
 import { FaLocationPin } from 'react-icons/fa6';
 
@@ -33,7 +33,7 @@ export default function Layout({ children }: LayoutProps) {
   }
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
   };
 
   return (
@@ -110,34 +110,22 @@ export default function Layout({ children }: LayoutProps) {
           <nav className="hidden md:flex space-x-4 md:space-x-6">
             <ul className="flex space-x-4 md:space-x-6">
               <li>
-                <Link href="/about-us" className="hover:text-blue-600">
-                  About Us
-                </Link>
+                <Link href="/about-us" className="hover:text-blue-600">About Us</Link>
               </li>
               <li>
-                <Link href="/programs" className="hover:text-blue-600">
-                  Programs
-                </Link>
+                <Link href="/programs" className="hover:text-blue-600">Programs</Link>
               </li>
               <li>
-                <Link href="/news-and-events" className="hover:text-blue-600">
-                  News & Events
-                </Link>
+                <Link href="/news-and-events" className="hover:text-blue-600">News & Events</Link>
               </li>
               <li>
-                <Link href="/explore" className="hover:text-blue-600">
-                  Explore Trident
-                </Link>
+                <Link href="/explore" className="hover:text-blue-600">Explore Trident</Link>
               </li>
               <li>
-                <Link href="/admissions" className="hover:text-blue-600">
-                  Admissions
-                </Link>
+                <Link href="/admissions" className="hover:text-blue-600">Admissions</Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-blue-600">
-                  Contact
-                </Link>
+                <Link href="/contact" className="hover:text-blue-600">Contact</Link>
               </li>
             </ul>
           </nav>
@@ -148,34 +136,22 @@ export default function Layout({ children }: LayoutProps) {
           <nav className="md:hidden bg-gray-100 shadow-lg">
             <ul className="flex flex-col items-center space-y-4 py-4">
               <li>
-                <Link href="/about-us" className="hover:text-blue-600" onClick={toggleMenu}>
-                  About Us
-                </Link>
+                <Link href="/about-us" className="hover:text-blue-600" onClick={toggleMenu}>About Us</Link>
               </li>
               <li>
-                <Link href="/programs" className="hover:text-blue-600" onClick={toggleMenu}>
-                  Programs
-                </Link>
+                <Link href="/programs" className="hover:text-blue-600" onClick={toggleMenu}>Programs</Link>
               </li>
               <li>
-                <Link href="/news-and-events" className="hover:text-blue-600" onClick={toggleMenu}>
-                  News & Events
-                </Link>
+                <Link href="/news-and-events" className="hover:text-blue-600" onClick={toggleMenu}>News & Events</Link>
               </li>
               <li>
-                <Link href="/explore" className="hover:text-blue-600" onClick={toggleMenu}>
-                  Explore Trident
-                </Link>
+                <Link href="/explore" className="hover:text-blue-600" onClick={toggleMenu}>Explore Trident</Link>
               </li>
               <li>
-                <Link href="/admissions" className="hover:text-blue-600">
-                  Admissions
-                </Link>
+                <Link href="/admissions" className="hover:text-blue-600" onClick={toggleMenu}>Admissions</Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-blue-600" onClick={toggleMenu}>
-                  Contact
-                </Link>
+                <Link href="/contact" className="hover:text-blue-600" onClick={toggleMenu}>Contact</Link>
               </li>
             </ul>
           </nav>
@@ -200,13 +176,12 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">About Us</h3>
             <p className="text-sm">
-              Established in 1998, Trident Group of Institutions is a leader in education and research in Odisha.
-              With over two decades of operation, it has transformed the lives of more than 20,000 students.
+            Established in 1998, Trident Group of Institutions is a leader in education and research in Odisha.
+            With over two decades of operation, it has transformed the lives of more than 20,000 students.
             </p>
           </div>
-
-          {/* Quick Links */}
-          <div>
+            {/* Quick Links */}
+            <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="/" className="text-gray-700 block hover:text-blue-600">Home</Link></li>
@@ -216,9 +191,8 @@ export default function Layout({ children }: LayoutProps) {
               <li><Link href="/contact" className="text-gray-700 block hover:text-blue-600">Contact</Link></li>
             </ul>
           </div>
-
-          {/* Trident Group Websites */}
-          <div>
+           {/* Trident Group Websites */}
+           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Trident Group Websites</h3>
             <ul className="space-y-2">
               <li><Link href="https://tat.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Technology</Link></li>
@@ -228,30 +202,77 @@ export default function Layout({ children }: LayoutProps) {
             </ul>
           </div>
 
-          {/* Contact Section */}
-          <div>
-            <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
-            <address className="text-sm not-italic">
-            <FaLocationPin className="mr-1" />
-              Trident Group of Institutions, <br />
-              F2, Chandaka Industrial Estate,<br />
-              Technology Corridor, Infocity Area,<br />
-              Chandrasekharpur, Bhubaneswar,<br />
-              Odisha, India. 751024 <br /><br />
+             {/* Contact Section */}
+             <div>
+      <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
+      <address className="text-sm not-italic">
+        <div className="flex flex-col space-y-1">
+          <span className="flex items-center">
+           
+            <span>
+              Trident Group of Institutions,
+              <br />
+              F2, Chandaka Industrial Estate,
+              <br />
+              Technology Corridor, Infocity Area,
+              <br />
+              Chandrasekharpur, Bhubaneswar,
+              <br />
+              Odisha, India. 751024
+            </span>
+          </span><br/>
 
-              <span className="flex items-center"><br />
-                <FaPhoneAlt className="mr-1" /> +91 98611 91195
-              </span><br />
-              <span className="flex items-center">
-                <FaEnvelope className="mr-1" /> info@trident.ac.in
-              </span><br />
-            </address>
+          <span className="flex items-center">
+            <FaPhoneAlt className="mr-1" /> +91 98611 91195
+          </span><br/>
+
+          <span className="flex items-center">
+            <FaEnvelope className="mr-1" /> info@trident.ac.in
+          </span><br/>
+        </div>
+      </address>
+    </div>
+
+          {/* Follow Us Section */}
+          <div>
+            <h3 className="text-lg text-[#316b9e] font-bold mb-4">Follow Us</h3>
+            <div className="flex space-x-4">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <FaFacebook className="text-blue-600" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <FaTwitter className="text-blue-400" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="text-blue-500" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="text-blue-600" />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                <FaYoutube className="text-red-600" />
+              </a>
+              <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="text-green-600" />
+              </a>
+            </div>
+          </div>
+
+          {/* Additional Links Section */}
+          <div>
+            <h3 className="text-lg text-[#316b9e] font-bold mb-4">Additional Links</h3>
+            <ul className="text-sm space-y-2">
+              <li>
+                <Link href="/privacy-policy" className="hover:text-blue-600">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link href="/terms-of-service" className="hover:text-blue-600">Terms of Service</Link>
+              </li>
+            </ul>
           </div>
         </div>
-
-        {/* Bottom Footer */}
-        <div className="text-center mt-6 border-t border-gray-300 pt-4">
-          <p className="text-sm">© 2024 Trident Group of Institutions. All Rights Reserved.</p>
+        <div className="mt-6 text-center text-sm">
+          © {new Date().getFullYear()} Trident Group of Institutions. All rights reserved.
         </div>
       </footer>
     </div>
