@@ -14,6 +14,7 @@ import {
   FaBars,
   FaTimes
 } from 'react-icons/fa';
+import { FaLocationPin } from 'react-icons/fa6';
 
 interface LayoutProps {
   children: ReactNode;
@@ -231,6 +232,7 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
             <address className="text-sm not-italic">
+            <FaLocationPin className="mr-1" />
               Trident Group of Institutions, <br />
               F2, Chandaka Industrial Estate,<br />
               Technology Corridor, Infocity Area,<br />
