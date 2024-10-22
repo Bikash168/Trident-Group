@@ -58,7 +58,7 @@ export default function AnimationSection() {
               className="w-[18vw] sm:w-[10vw] object-contain transition-transform duration-300"
               quality={100}
             />
-            <p className="mt-2 text-center text-xs font-semibold">
+            <p className="mt-2 text-center text-xs font-normal">
               Trident Academy of Technology
             </p>
           </div>
@@ -67,7 +67,7 @@ export default function AnimationSection() {
         <Link
           href="https://www.trident.ac.in/creative"
           target="_blank"
-          className="absolute left-[-90px] top-[50%] transform -translate-y-1/2 sm:left-[-50px] hover:scale-110 transition-transform duration-300"
+          className="absolute left-[-30px] top-[50%] transform -translate-y-1/2 sm:left-[-50px] hover:scale-110 transition-transform duration-300"
         >
           <div className="flex flex-col items-center">
             <Image
@@ -78,7 +78,7 @@ export default function AnimationSection() {
               className="w-[16vw] sm:w-[8vw] object-contain transition-transform duration-300"
               quality={100}
             />
-            <p className="mt-2 text-center text-xs font-semibold sm:left-[-20px]">
+            <p className="mt-2 text-center text-xs font-normal sm:left-[-20px]">
               Trident Academy <br /> of Creative Technology
             </p>
 
