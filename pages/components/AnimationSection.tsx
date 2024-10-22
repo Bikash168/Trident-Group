@@ -88,7 +88,7 @@ export default function AnimationSection() {
         <Link
           href="https://www.trident.ac.in/professional"
           target="_blank"
-          className="absolute right-[-60px] top-[50%] transform -translate-y-1/2 sm:right-[-50px] hover:scale-110 transition-transform duration-300"
+          className="absolute right-[-30px] top-[50%] transform -translate-y-1/2 sm:right-[-50px] hover:scale-110 transition-transform duration-300"
         >
           <div className="flex flex-col items-center">
             <Image
