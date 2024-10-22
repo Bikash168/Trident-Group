@@ -22,18 +22,18 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   const [mounted, setMounted] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Hamburger menu state
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    setMounted(true); // Ensures components render only on the client
+    setMounted(true);
   }, []);
 
   if (!mounted) {
-    return null; // Prevents rendering on the server
+    return null;
   }
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle hamburger menu state
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -45,16 +45,16 @@ export default function Layout({ children }: LayoutProps) {
       {/* Header */}
       <header className="bg-white shadow-md sticky top-0 z-50">
         {/* Top Bar Section */}
-        <div className="bg-gray-100 text-gray-700 text-xs md:text-sm py-2">
+        <div className="bg-gray-100 text-gray-700 py-2">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-8 space-y-2 md:space-y-0">
-            <div className="flex flex-col md:flex-row items-center space-x-4">
-              <span className="flex items-center">
+            <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4 space-y-2 md:space-y-0">
+              <span className="flex items-center text-sm">
                 <FaMapMarkerAlt className="mr-1" /> Bhubaneswar, India
               </span>
-              <span className="flex items-center">
+              <span className="flex items-center text-sm">
                 <FaPhoneAlt className="mr-1" /> +91 98611 91195
               </span>
-              <span className="flex items-center">
+              <span className="flex items-center text-sm">
                 <FaEnvelope className="mr-1" /> info@trident.ac.in
               </span>
             </div>
@@ -84,9 +84,7 @@ export default function Layout({ children }: LayoutProps) {
         {/* Main Navigation */}
         <div className="container mx-auto p-4 flex justify-between items-center">
           <Link href="/" className="flex items-center w-full md:w-auto">
-            <div className="space-x-3">
-              <img src="/tgi_logo.png" alt="TGI Logo" className="h-10 md:h-12 w-auto" />
-            </div>
+            <img src="/tgi_logo.png" alt="TGI Logo" className="h-10 md:h-12 w-auto" />
           </Link>
           {/* Hamburger Menu Icon */}
           <div className="md:hidden">
@@ -96,7 +94,7 @@ export default function Layout({ children }: LayoutProps) {
           </div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-6">
+          <nav className="hidden md:flex space-x-4 md:space-x-6">
             <ul className="flex space-x-4 md:space-x-6">
               <li>
                 <Link href="/about-us" className="hover:text-blue-600">
@@ -156,7 +154,7 @@ export default function Layout({ children }: LayoutProps) {
 
       {/* Footer */}
       <footer className="bg-gray-100 text-gray-700 p-6 md:p-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">About Us</h3>
@@ -170,7 +168,7 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/index" className="text-gray-700 block hover:text-blue-600">Home</Link></li>
+              <li><Link href="/" className="text-gray-700 block hover:text-blue-600">Home</Link></li>
               <li><Link href="/about-us" className="text-gray-700 block hover:text-blue-600">About Us</Link></li>
               <li><Link href="/programs" className="text-gray-700 block hover:text-blue-600">Programs</Link></li>
               <li><Link href="/news-and-events" className="text-gray-700 block hover:text-blue-600">News & Events</Link></li>
@@ -189,24 +187,20 @@ export default function Layout({ children }: LayoutProps) {
             </ul>
           </div>
 
-          {/* Address */}
+          {/* Contact Section */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
             <address>
               Trident Group of Institutions,
               <br />F2, Chandaka Industrial Estate,
-              <br />Technology Corridor, Infocity Area,
-              <br />Chandrasekharpur, Bhubaneswar,
-              <br />Odisha. 751024<br />
-
-              <br /><FaPhoneAlt className="inline-block mr-2" /> +91 98611 91195 <br />
-              <br /><FaEnvelope className="inline-block mr-2" /> info@trident.ac.in
+              <br />In front of Infocity, Bhubaneswar-751024
             </address>
+            <p className="mt-2">Phone: +91 98611 91195</p>
+            <p className="mt-2">Email: info@trident.ac.in</p>
           </div>
         </div>
-
-        <div className="text-center mt-8">
-          <p>&copy; 2024 Trident Group of Institutions. All rights reserved.</p>
+        <div className="text-center text-sm mt-8">
+          &copy; {new Date().getFullYear()} Trident Group of Institutions. All Rights Reserved.
         </div>
       </footer>
     </div>
