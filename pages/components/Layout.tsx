@@ -96,52 +96,52 @@ export default function Layout({ children }: LayoutProps) {
 
         {/* Main Navigation */}
         <div className="container mx-auto p-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center w-full md:w-auto">
-  <img 
-    src="/academy-tech.png" 
-    alt="TGI Logo" 
-    className="h-16 md:h-24 w-auto mr-3" // Increased logo size and added margin-right for spacing
-  />
-  <div>
-    <span className="text-2xl md:text-3xl font-semibold text-blue-900">TRIDENT ACADEMY OF TECHNOLOGY</span> 
-    {/* Text next to the logo */}
-    <span className="block text-sm text-gray-600 mt-1">Approved by AICTE & Affiliated to BPUT</span>
-    {/* Additional line below */}
-  </div>
-</Link>
+          <Link href="/" className="flex items-center w-full md:w-auto">
+            <img
+              src="/academy-tech.png"
+              alt="TGI Logo"
+              className="h-16 md:h-24 w-auto mr-3" // Increased logo size and added margin-right for spacing
+            />
+            <div>
+              <span className="text-2xl md:text-3xl font-semibold text-blue-900">TRIDENT ACADEMY OF TECHNOLOGY</span>
+              {/* Text next to the logo */}
+              <span className="block text-sm text-gray-600 mt-1">Approved by AICTE & Affiliated to BPUT</span>
+              {/* Additional line below */}
+            </div>
+          </Link>
 
 
-  {/* Hamburger Menu Icon */}
-  <div className="md:hidden">
-    <button onClick={toggleMenu} aria-label="Toggle Menu">
-      {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-    </button>
-  </div>
+          {/* Hamburger Menu Icon */}
+          <div className="md:hidden">
+            <button onClick={toggleMenu} aria-label="Toggle Menu">
+              {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </button>
+          </div>
 
-  {/* Desktop Menu */}
-  <nav className="hidden md:flex space-x-4 md:space-x-6">
-    <ul className="flex space-x-4 md:space-x-6">
-      <li>
-        <Link href="/about-us" className="hover:text-blue-600">About Us</Link>
-      </li>
-      <li>
-        <Link href="/programs" className="hover:text-blue-600">Programs</Link>
-      </li>
-      <li>
-        <Link href="/news-and-events" className="hover:text-blue-600">News & Events</Link>
-      </li>
-      <li>
-        <Link href="/explore" className="hover:text-blue-600">Explore Trident</Link>
-      </li>
-      <li>
-        <Link href="/admissions" className="hover:text-blue-600">Admissions</Link>
-      </li>
-      <li>
-        <Link href="/contact" className="hover:text-blue-600">Contact</Link>
-      </li>
-    </ul>
-  </nav>
-</div>
+          {/* Desktop Menu */}
+          <nav className="hidden md:flex space-x-4 md:space-x-6">
+            <ul className="flex space-x-4 md:space-x-6">
+              <li>
+                <Link href="/about-us" className="hover:text-blue-600">About Us</Link>
+              </li>
+              <li>
+                <Link href="/programs" className="hover:text-blue-600">Programs</Link>
+              </li>
+              <li>
+                <Link href="/news-and-events" className="hover:text-blue-600">News & Events</Link>
+              </li>
+              <li>
+                <Link href="/explore" className="hover:text-blue-600">Explore Trident</Link>
+              </li>
+              <li>
+                <Link href="/admissions" className="hover:text-blue-600">Admissions</Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-blue-600">Contact</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
@@ -188,12 +188,12 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">About Us</h3>
             <p className="text-sm">
-            Established in 1998, Trident Group of Institutions is a leader in education and research in Odisha.
-            With over two decades of operation, it has transformed the lives of more than 20,000 students.
+              Established in 1998, Trident Group of Institutions is a leader in education and research in Odisha.
+              With over two decades of operation, it has transformed the lives of more than 20,000 students.
             </p>
           </div>
-            {/* Quick Links */}
-            <div>
+          {/* Quick Links */}
+          <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="/" className="text-gray-700 block hover:text-blue-600">Home</Link></li>
@@ -203,8 +203,8 @@ export default function Layout({ children }: LayoutProps) {
               <li><Link href="/contact" className="text-gray-700 block hover:text-blue-600">Contact</Link></li>
             </ul>
           </div>
-           {/* Trident Group Websites */}
-           <div>
+          {/* Trident Group Websites */}
+          <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Trident Group Websites</h3>
             <ul className="space-y-2">
               <li><Link href="https://tat.ac.in/" className="text-gray-700 block hover:text-blue-600">Trident Academy of Technology</Link></li>
@@ -214,36 +214,36 @@ export default function Layout({ children }: LayoutProps) {
             </ul>
           </div>
 
-             {/* Contact Section */}
-             <div>
-      <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
-      <address className="text-sm not-italic">
-        <div className="flex flex-col space-y-1">
-          <span className="flex items-center">
-           
-            <span>
-              Trident Group of Institutions,
-              <br />
-              F2, Chandaka Industrial Estate,
-              <br />
-              Technology Corridor, Infocity Area,
-              <br />
-              Chandrasekharpur, Bhubaneswar,
-              <br />
-              Odisha, India. 751024
-            </span>
-          </span><br/>
+          {/* Contact Section */}
+          <div>
+            <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
+            <address className="text-sm not-italic">
+              <div className="flex flex-col space-y-1">
+                <span className="flex items-center">
 
-          <span className="flex items-center">
-            <FaPhoneAlt className="mr-1" /> +91 98611 91195
-          </span><br/>
+                  <span>
+                    Trident Group of Institutions,
+                    <br />
+                    F2, Chandaka Industrial Estate,
+                    <br />
+                    Technology Corridor, Infocity Area,
+                    <br />
+                    Chandrasekharpur, Bhubaneswar,
+                    <br />
+                    Odisha, India. 751024
+                  </span>
+                </span><br />
 
-          <span className="flex items-center">
-            <FaEnvelope className="mr-1" /> info@trident.ac.in
-          </span><br/>
-        </div>
-      </address>
-    </div>
+                <span className="flex items-center">
+                  <FaPhoneAlt className="mr-1" /> +91 98611 91195
+                </span><br />
+
+                <span className="flex items-center">
+                  <FaEnvelope className="mr-1" /> info@trident.ac.in
+                </span><br />
+              </div>
+            </address>
+          </div>
 
           {/* Follow Us Section */}
           <div>
