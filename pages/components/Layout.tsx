@@ -95,7 +95,7 @@ export default function Layout({ children }: LayoutProps) {
         </div>
 
         {/* Main Navigation */}
-        <div className="container mx-auto p-4 flex justify-between items-center">
+        <div className="container mx-auto p-1 flex justify-between items-center">
           <Link href="/" className="flex items-center w-full md:w-auto">
             <img
               src="/academy-tech.png"
