@@ -96,40 +96,52 @@ export default function Layout({ children }: LayoutProps) {
 
         {/* Main Navigation */}
         <div className="container mx-auto p-4 flex justify-between items-center">
-          <Link href="/" className="flex items-center w-full md:w-auto">
-            <img src="/tgi_logo.png" alt="TGI Logo" className="h-10 md:h-12 w-auto" />
-          </Link>
-          {/* Hamburger Menu Icon */}
-          <div className="md:hidden">
-            <button onClick={toggleMenu} aria-label="Toggle Menu">
-              {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-            </button>
-          </div>
+        <Link href="/" className="flex items-center w-full md:w-auto">
+  <img 
+    src="/academy-tech.png" 
+    alt="TGI Logo" 
+    className="h-16 md:h-24 w-auto mr-3" // Increased logo size and added margin-right for spacing
+  />
+  <div>
+    <span className="text-2xl md:text-3xl font-semibold text-blue-900">TRIDENT ACADEMY OF TECHNOLOGY</span> 
+    {/* Text next to the logo */}
+    <span className="block text-sm text-gray-600 mt-1">Approved by AICTE & Affiliated to BPUT</span>
+    {/* Additional line below */}
+  </div>
+</Link>
 
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-4 md:space-x-6">
-            <ul className="flex space-x-4 md:space-x-6">
-              <li>
-                <Link href="/about-us" className="hover:text-blue-600">About Us</Link>
-              </li>
-              <li>
-                <Link href="/programs" className="hover:text-blue-600">Programs</Link>
-              </li>
-              <li>
-                <Link href="/news-and-events" className="hover:text-blue-600">News & Events</Link>
-              </li>
-              <li>
-                <Link href="/explore" className="hover:text-blue-600">Explore Trident</Link>
-              </li>
-              <li>
-                <Link href="/admissions" className="hover:text-blue-600">Admissions</Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-blue-600">Contact</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+
+  {/* Hamburger Menu Icon */}
+  <div className="md:hidden">
+    <button onClick={toggleMenu} aria-label="Toggle Menu">
+      {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+    </button>
+  </div>
+
+  {/* Desktop Menu */}
+  <nav className="hidden md:flex space-x-4 md:space-x-6">
+    <ul className="flex space-x-4 md:space-x-6">
+      <li>
+        <Link href="/about-us" className="hover:text-blue-600">About Us</Link>
+      </li>
+      <li>
+        <Link href="/programs" className="hover:text-blue-600">Programs</Link>
+      </li>
+      <li>
+        <Link href="/news-and-events" className="hover:text-blue-600">News & Events</Link>
+      </li>
+      <li>
+        <Link href="/explore" className="hover:text-blue-600">Explore Trident</Link>
+      </li>
+      <li>
+        <Link href="/admissions" className="hover:text-blue-600">Admissions</Link>
+      </li>
+      <li>
+        <Link href="/contact" className="hover:text-blue-600">Contact</Link>
+      </li>
+    </ul>
+  </nav>
+</div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
