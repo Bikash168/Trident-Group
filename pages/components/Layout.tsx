@@ -39,7 +39,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="bg-white text-gray-900">
       <Head>
-        <title>Trident Group of Institutions</title>
+        <title>Trident Academy of Technology</title>
       </Head>
 
       {/* Header */}
